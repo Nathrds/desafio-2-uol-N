@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 100px;
+}
+
+ul {
+    font-family: var(--titulo-p);
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    padding: 16px;
+}
+
+.linkPages {
+    text-decoration: none;
+    color: #354733;
+}
+
+.linkPages:hover, .linkPages:active {
+    color: #8A9B6E;
+    cursor: pointer;
+}

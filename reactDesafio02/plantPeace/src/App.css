@@ -9,3 +9,15 @@
   margin: 0;
 }
 
+h1 {
+  font-family: var(--titulo-h1);
+}
+
+h2 {
+  font-family: var(--titulo-h2);
+}
+
+p {
+  font-family: var(--titulo-p);
+}
+
