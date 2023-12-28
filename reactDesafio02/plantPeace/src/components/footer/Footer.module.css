@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    background-image: url(./../img/footer-img.svg);
+    background-image: url(../../assets/img/footer-img.svg);
     background-color: #354733;
     background-size: cover;
     background-repeat: no-repeat;

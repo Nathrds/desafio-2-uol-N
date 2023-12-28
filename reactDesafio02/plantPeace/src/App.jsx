@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './components/header/Header'
 import Home from './pages/Home/Home'
-//import Register from './pages/Register/Register'
 import Footer from './components/footer/Footer'
+import Register from './pages/Register/Register'
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
         <div>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/register' element={<Register />} />
           </Routes>
         </div>
         <Footer />
