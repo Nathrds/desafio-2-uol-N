@@ -1,0 +1,15 @@
+.sectionSteps {
+    border: 1px solid red;
+}
+
+.sectionSteps h1 {
+    border: 1px solid green;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--darkGreen);
+}
+
+.sectionSteps span {
+    color: var(--ligthGreen);
+}

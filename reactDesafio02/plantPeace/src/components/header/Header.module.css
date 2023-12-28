@@ -22,10 +22,10 @@ li {
 
 .linkPages {
     text-decoration: none;
-    color: #354733;
+    color: var(--darkGreen);
 }
 
 .linkPages:hover, .linkPages:active {
-    color: #8A9B6E;
+    color: var(--ligthGreen);
     cursor: pointer;
 }
