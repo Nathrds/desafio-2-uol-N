@@ -1,4 +1,5 @@
 .navHeader {
+    background-color: var(--tab-grey-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,7 +7,7 @@
     padding: 16px 100px;
 }
 
-ul {
+.navHeader ul {
     font-family: var(--titulo-p);
     display: flex;
     flex-direction: row;
@@ -15,17 +16,17 @@ ul {
     text-align: center;
 }
 
-li {
+.navHeader li {
     list-style: none;
     padding: 16px;
 }
 
 .linkPages {
     text-decoration: none;
-    color: var(--darkGreen);
+    color: var(--color-primary-lunar-green);
 }
 
 .linkPages:hover, .linkPages:active {
-    color: var(--ligthGreen);
+    color: var(--color-primary-avacado);
     cursor: pointer;
 }
