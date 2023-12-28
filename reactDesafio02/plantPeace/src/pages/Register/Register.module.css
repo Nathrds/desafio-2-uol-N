@@ -1,26 +1,51 @@
 * {
   margin: 0;
   padding: 0;
-  background-image: url(modernPicture1.svg);
 }
 
-.container {
+.defaultContainer {
   display: flex;
-  flex-direction: column;
-  padding: 48px;
-  gap: 36px;
+  flex-direction: row;
+  
+}
+/*
+.defaultContainer {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.teste {
+.imageContainer {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: end;
+}
+*/
+.spanStyle {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  padding: 5px;
+  padding: px;
 }
 
 form {
   width: 460px;
   margin: 0 57px 997px;
+}
+
+.imageStyle{
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  align-items: right;
+}
+
+.imageContainer{
+  position: relative;
+  display: flex;
+  width: 100%;
 }
 
 input {
@@ -59,4 +84,3 @@ section {
   border-radius: 4px;
   border: 1.5px solid var(--Dark-gray, #AFB2AA);
 }
-
