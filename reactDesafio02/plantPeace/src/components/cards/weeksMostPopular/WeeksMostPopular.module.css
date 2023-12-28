@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F0F1EE;
+    background-color: var(--tab-grey-color);
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -12,7 +12,7 @@
     font-weight: 700;
     font-family: var(--titulo-h1);
     padding-bottom: 5%;
-    color: black;
+    color: var(--color-primary-lunar-green);
 }
 
 .cards {

@@ -2,7 +2,7 @@
     margin: 2%;
     width: 25%;
     height: 20%;
-    background-color: #F8F9FB;
+    background-color: var(--background-color);
 }
 
 .image {
@@ -11,9 +11,9 @@
 }
 
 .title {
-    color: #354733;
+    color: var(--color-primary-lunar-green);
 }
 
 .price {
-    color: #354733;
+    color: var(--color-primary-lunar-green);
 }
