@@ -29,6 +29,8 @@ article h1 {
     margin-bottom: 16px;
 }
 
+article p {margin: 16px 0;}
+
 p, .navLink {
     /* border: 1px solid purple; */
     font-family: var(--titulo-p);
