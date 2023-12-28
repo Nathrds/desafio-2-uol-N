@@ -40,6 +40,8 @@ p, .navLink {
     
 }
 
+.navFooter { display: flex; }
+
 section {
     /* border: 1px solid red; */
     display: flex;
@@ -72,13 +74,13 @@ section h2 {
 footer {
     /* border: 1px solid blue; */
     border-top: 1px solid #DDDEA0;
-    max-width: 1532px;
+    max-width: 1700px;
     color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 100px;
+    padding: 30px 0px;
     margin: 0 auto;
 }
 
