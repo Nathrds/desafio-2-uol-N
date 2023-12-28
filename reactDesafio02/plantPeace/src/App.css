@@ -2,8 +2,14 @@
   --titulo-h1: 'EB Garamond', serif;
   --titulo-h2: 'Lato', sans-serif;
   --titulo-p: 'Raleway', sans-serif;
-  --darkGreen: #354733;
-  --ligthGreen: #8A9B6E;
+
+/*        ---    Colors  ---           */
+  --color-primary-lunar-green: #354733;
+  --color-primary-avacado: #8A9B6E;
+  --color-primary-accent: #DDDEA0;
+  --background-color: #FCFCFC;
+  --tab-grey-color: #F0F1EE;
+  --text-white: #FFFFFF;
 }
 
 * {
