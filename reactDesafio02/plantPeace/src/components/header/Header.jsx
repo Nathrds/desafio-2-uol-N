@@ -1,6 +1,6 @@
 import styles from "./Header.module.css"
-import Logo from "../../assets/img/logo-plantpeace.svg"
-import User from "../../assets/img/user.svg"
+import Logo from "../../assets/img/logo-plantpeace.png"
+import User from "../../assets/img/user.png"
 import {NavLink} from "react-router-dom"
 
 const Header = () => {
