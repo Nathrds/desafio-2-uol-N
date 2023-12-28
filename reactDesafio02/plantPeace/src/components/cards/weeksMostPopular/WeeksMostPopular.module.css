@@ -3,12 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    background-color: #F0F1EE;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
 .h1 {
+    font-weight: 700;
+    font-family: var(--titulo-h1);
     padding-bottom: 5%;
     color: black;
 }
