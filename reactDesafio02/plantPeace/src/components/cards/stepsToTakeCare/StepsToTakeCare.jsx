@@ -4,9 +4,9 @@ import elipseDrop from "../../../assets/img/imgStepsToCare/Ellipse-drop1.svg"
 import elipseSun from "../../../assets/img/imgStepsToCare/Ellipse-sun2.svg"
 import elipseFolder from "../../../assets/img/imgStepsToCare/Ellipse-folder3.svg"
 
-import image01Steps from "../../../assets/img/imgStepsToCare/image01_Steps.svg"
-import image02Steps from "../../../assets/img/imgStepsToCare/image02_Steps.svg"
-import image03Steps from "../../../assets/img/imgStepsToCare/image03_Steps.svg"
+import image01Steps from "../../../assets/img/imgStepsToCare/image01_Steps.png"
+import image02Steps from "../../../assets/img/imgStepsToCare/image02_Steps.png"
+import image03Steps from "../../../assets/img/imgStepsToCare/image03_Steps.png"
 
 const StepsToTakeCare = () => {
   return (

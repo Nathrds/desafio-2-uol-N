@@ -1,7 +1,7 @@
 import styles from './Register.module.css'
 //import { useState, useEffect } from "react";
 import SquareButton from "../../components/buttons/squareButton/SquareButton.jsx";
-import plantImage from "../../assets/img/imgDiscovery/rightPlant.svg";
+import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
 
 const Register = () => {
 
