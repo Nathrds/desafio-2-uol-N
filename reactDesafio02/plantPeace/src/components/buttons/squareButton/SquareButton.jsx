@@ -1,9 +1,14 @@
 import styles from "./SquareButton.module.css"
+import PropTypes from 'prop-types'
 
-const SquareButton = (title) => {
+const SquareButton = ({title}) => {
   return (
-    <button className={styles.colorButton}>{title}</button>
+    <button className={styles.squareButton}>{title}</button>
   )
 }
 
-export default SquareButton;
+SquareButton.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+export default SquareButton
