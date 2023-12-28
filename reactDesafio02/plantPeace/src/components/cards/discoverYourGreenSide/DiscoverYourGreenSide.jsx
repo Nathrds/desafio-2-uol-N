@@ -1,7 +1,7 @@
 // import React from 'react'
 import styles from './Discover.module.css'
 import RightImage from "../../../assets/img/imgDiscovery/rightPlant.svg";
-import LeftImage from "../../../assets/img/imgDiscovery/leftPlant.svg";
+import LeftImage from "../../../assets/img/imgDiscovery/left plant p.png";
 
 
 const DiscoverYourGreenSide = () => {
