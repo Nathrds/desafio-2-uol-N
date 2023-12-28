@@ -10,12 +10,12 @@
     font-size: 64px;
     font-weight: 700;
     text-align: center;
-    color: var(--darkGreen);
+    color: var(--color-primary-lunar-green);
     margin-bottom: 16px;
 }
 
 .sectionSteps span {
-    color: var(--ligthGreen);
+    color: var(--color-primary-avacado);
 }
 
 .sectionSteps p {
