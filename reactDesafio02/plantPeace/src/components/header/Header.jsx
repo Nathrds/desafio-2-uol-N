@@ -1,6 +1,6 @@
 import styles from "./Header.module.css"
-import Logo from "./../img/logo-plantpeace.svg"
-import User from "./../img/user.svg"
+import Logo from "../../assets/img/logo-plantpeace.svg"
+import User from "../../assets/img/user.svg"
 import {NavLink} from "react-router-dom"
 
 const Header = () => {
@@ -12,10 +12,10 @@ const Header = () => {
         </NavLink>
         <ul>
             <li>
-                <NavLink className={styles.linkPages}>Home</NavLink>
+                <NavLink to="/" className={styles.linkPages}>Home</NavLink>
             </li>
             <li>
-                <NavLink className={styles.linkPages}>Register</NavLink>
+                <NavLink to="/register" className={styles.linkPages}>Register</NavLink>
             </li>
             <li>
                 <NavLink className={styles.linkPages}>Products</NavLink>
