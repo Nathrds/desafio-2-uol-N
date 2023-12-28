@@ -1,4 +1,3 @@
-// import "../../App.css"
 import styles from "./Header.module.css"
 import Logo from "./../img/logo-plantpeace.svg"
 import User from "./../img/user.svg"

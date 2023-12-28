@@ -1,4 +1,3 @@
-// import "../../App.css"
 import styles from "./Footer.module.css"
 import Logo from "./../img/logo-footer.svg"
 
