@@ -1,4 +1,4 @@
-import "../../App.css"
+// import "../../App.css"
 import styles from "./Footer.module.css"
 import Logo from "./../img/logo-footer.svg"
 
@@ -13,7 +13,7 @@ const Footer = () => {
                 <p>compassinhos@gmail.com</p>
                 <p>+55 41 99999-9999</p>
             </article>
-            <nav>
+            <nav className={styles.navFooter}>
                 <section>
                     <h2>Links</h2>
                     <NavLink className={styles.navLink}>About Us</NavLink>

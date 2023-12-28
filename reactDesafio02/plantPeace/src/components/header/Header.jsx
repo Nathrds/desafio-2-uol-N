@@ -1,4 +1,4 @@
-import "../../App.css"
+// import "../../App.css"
 import styles from "./Header.module.css"
 import Logo from "./../img/logo-plantpeace.svg"
 import User from "./../img/user.svg"
@@ -7,7 +7,7 @@ import {NavLink} from "react-router-dom"
 const Header = () => {
 
   return (
-    <nav>
+    <nav className={styles.navHeader}>
         <NavLink to="/">
             <img src={Logo} alt="Site logo with a plant" />
         </NavLink>
