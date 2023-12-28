@@ -1,9 +1,11 @@
 // import styles from "./Home.module.css"
 
+import WeeksMostPopular from "../../components/cards/weeksMostPopular/WeeksMostPopular"
+
 
 const Home = () => {
   return (
-    <div>Page Home</div>
+    <WeeksMostPopular/>
   )
 }
 

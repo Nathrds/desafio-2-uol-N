@@ -1,5 +1,20 @@
 .container {
-    width: 50;
-    height: 100;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.h1 {
+    padding-bottom: 5%;
+    color: black;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
