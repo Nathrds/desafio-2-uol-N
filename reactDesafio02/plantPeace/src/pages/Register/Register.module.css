@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+}
+
+/* form styles */
+form {
+  width: 460px;
+  margin: 0 57px 997px;
+}
+
+.plantContainer {
+  margin: 79px ;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1px;
+}
+
+label span {
+  margin-bottom: .3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.inputRadio {
+
+}
+
+input,
+textarea {
+
+  display: flex;
+  padding: 12px 0px 12px 16px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 4px;
+  border: 1.5px solid var(--Dark-gray, #AFB2AA);  
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+.labelStyle {
+  display: flex;
+  flex-direction: flex-;
+}
