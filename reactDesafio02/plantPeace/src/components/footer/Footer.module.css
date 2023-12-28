@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     background-image: url(../../assets/img/footer-img.svg);
-    background-color: var(--darkGreen);
+    background-color: var(--color-primary-lunar-green);
     background-size: cover;
     background-repeat: no-repeat;
 }
