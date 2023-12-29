@@ -1,4 +1,4 @@
-//import styles from "./Products.module.css"
+import styles from "./Products.module.css"
 
 import { useState, useEffect } from "react"
 import Product from "./Product"
@@ -21,7 +21,7 @@ const Products = () => {
   }, [])
 
   return (
-    <ul>
+    <ul className={styles.allProducts}>
       {loadedProducts.map((plants) => (
         <Product key={plants.id} plants={plants} />
       ))}
