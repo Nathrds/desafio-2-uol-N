@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .container{
-    border: 1px solid red;
     position: relative;
     display: flex;
     height: 1024px;
@@ -24,46 +24,95 @@
 }
 
 .img2{
-    position: relative;
     display: flex;
-    width: 50%;
+    align-items: flex-start;
+    width: 103%;
     height: 100%;
+    margin-top: -1086px;
+    margin-left: -21px;
     filter: grayscale(100%);
+    order: 1;
 }
 
-.image2 {
+.image2{
     position: relative;
-    margin-top: 41%;
+    margin-top: 120%;
     align-items: left;
-    width: 100%;
-    height: 100%;
+    width: 569px;
+    height: 705px;
+    max-width: 100%;
+    max-height: 100%;
     background-size: cover;
+    order: 1;
 }
 
 .containerContent{
+    border: 1px solid blue;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding-left: 20px;
 }
 
 .h1{
     font-family: 'Pacifico', cursive;
     font-size: 16px;
     font-weight: 400;
+    font-weight: bold;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
+    width: 112px;
+    height: 28px;
+    margin-left: 127px;
+    margin-top: 180px;
+}
+
+.Line{
+    width: 32px;
+    height: 3px;
+    float: left;
+    background-image: url('../../../assets/img/imgDiscovery/line.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 11px;
+    margin-left: -40px;
 }
 
 .h2{
     font-size: 64px;
     font-family: var(--titulo-h1);
     color: #354733;
+    width: 631px;
+    height: 144px;
+    margin-left: 80px;
+    margin-top: 12px;
 }
 
 .green{
     color: #8a9b6e;
+}
+
+.p{
+    width: 611px;
+    height: 97px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.learn{
+    display: flex;
+    line-height: 24.72px;
+    margin-top: 380px;
+    margin-left: 100px;
+    order: 2;
+
+}
+
+.button{
+    z-index: 1;
 }

@@ -1,6 +1,7 @@
-import React from "react";
 import style from "./PlantCard.module.css";
-import CardButton from "../cards/cardButton/CardButton";
+import CardButton from "../../buttons/cardButton/CardButton";
+
+import PropTypes from 'prop-types';
 
 const PlantCard = ({ model }) => {
   return (
@@ -13,6 +14,15 @@ const PlantCard = ({ model }) => {
       </div>
     </div>
   );
+};
+
+PlantCard.propTypes = {
+  model: PropTypes.shape({
+    imgUrl: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    label: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 };
 
 export default PlantCard;
