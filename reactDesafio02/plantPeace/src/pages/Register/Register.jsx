@@ -4,6 +4,7 @@ import SquareButton from "../../components/buttons/squareButton/SquareButton.jsx
 import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
 import { NavLink } from "react-router-dom";
 
+
 const Register = () => {
   return (
     <div className={styles.defaultContainer}>
