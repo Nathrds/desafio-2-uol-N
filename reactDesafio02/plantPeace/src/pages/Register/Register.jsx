@@ -8,24 +8,31 @@ const Register = () => {
   return (
     <div className={styles.defaultContainer}>
       
-      <h1>Plant registration</h1>
       <form>
         <label>
+        
+        <h1 className={styles.h1Style}>Plant registration</h1>
+
         <span>Plant name:</span>
-          <input type="text" name="plantName" placeholder="Echinocereus Cactus"/>
+          <input className={styles.inputStyle} type="text" name="plantName" placeholder="Echinocereus Cactus"/>
           
           <span className={styles.span}>Plant subtitle:</span>
-          <input  type="text" name="plantSubtitle" placeholder="A majestic addition to your plant collection"/>
+          <input className={styles.inputStyle}  type="text" name="plantSubtitle" placeholder="A majestic addition to your plant collection"/>
           
           <span>Plant type:</span>
-          <input type="text" name="plantType" placeholder="Cactus" />
+          <input className={styles.inputStyle} type="text" name="plantType" placeholder="Cactus" />
           
-          <span>Price:</span>
-          <input type="text" name="plantPrice" placeholder="$139.99" />
-          
-          <span>Discount percentage:</span>
-          <input type="text" name="plantDiscount" placeholder="20%" />
-          
+          <section className={styles.priceSection}>
+            <div>
+              <span>Price:</span>
+              <input type="text" name="plantPrice" placeholder="$139.99" />
+            </div>
+
+            <div>
+            <span>Discount percentage:</span>
+            <input type="text" name="plantDiscount" placeholder="20%" />
+            </div>
+          </section>
           <span>Label:</span>
           <section className={styles.section}>  
             <div className={styles.radioStyle}>
@@ -45,7 +52,7 @@ const Register = () => {
           <span>Description:</span>
           <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Ladyfinger cactus..." />
 
-          <button className={SquareButton}>Register</button>
+          <button>Register</button>
         </label>
       </form>
       
