@@ -1,7 +1,7 @@
 import React from "react";
 import { dataPlants } from "../../../data/jsonData";
 import style from "./PlantsInSale.module.css"
-import CardsSliders from "../../sliders/CardsSliders";
+import PlantCard from "../../cards/card/PlantCard";
 
 const PlantsInSale = () => {
     return (
@@ -13,9 +13,9 @@ const PlantsInSale = () => {
                 </h1>
             </section>
             <section className={style.cards}>
-                <CardsSliders model={dataPlants["plants"][0]} />
-                <CardsSliders model={dataPlants["plants"][0]} />
-                <CardsSliders model={dataPlants["plants"][0]} />
+                <PlantCard model={dataPlants["plants"][0]} />
+                <PlantCard model={dataPlants["plants"][0]} />
+                <PlantCard model={dataPlants["plants"][0]} />
             </section>
         </div>
         

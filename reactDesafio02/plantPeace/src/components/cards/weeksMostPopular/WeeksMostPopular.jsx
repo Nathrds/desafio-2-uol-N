@@ -1,7 +1,7 @@
 import React from "react";
 import { dataPlants } from "../../../data/jsonData";
 import style from "./WeeksMostPopular.module.css"
-import CardsSliders from "../../sliders/CardsSliders";
+import PlantCard from "../../cards/card/PlantCard";
 
 const WeeksMostPopular = () => {
     return (
@@ -13,9 +13,9 @@ const WeeksMostPopular = () => {
                 </h1>
             </section>
             <section className={style.cards}>
-                <CardsSliders model={dataPlants["plants"][0]} />
-                <CardsSliders model={dataPlants["plants"][0]} />
-                <CardsSliders model={dataPlants["plants"][0]} />
+                <PlantCard model={dataPlants["plants"][0]} />
+                <PlantCard model={dataPlants["plants"][0]} />
+                <PlantCard model={dataPlants["plants"][0]} />
             </section>
         </div>
         
