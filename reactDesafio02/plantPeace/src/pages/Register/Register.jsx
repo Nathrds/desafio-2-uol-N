@@ -53,9 +53,12 @@ const Register = () => {
             <span className={styles.spanStyle}>Description:</span>
             <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Ladyfinger cactus..."/>
             
-            <NavLink>
-              <SquareButton title={"Register"}/>
-            </NavLink>
+            <div className={styles.regButtonDiv}>
+              <NavLink className={styles.registerButton}>
+                <SquareButton title={"Register"}/>
+              </NavLink>
+            </div>
+            
           </label>
         </section>
       </form>
