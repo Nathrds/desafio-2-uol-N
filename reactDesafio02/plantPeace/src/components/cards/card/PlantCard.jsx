@@ -1,8 +1,8 @@
 import React from "react";
-import style from "./CardsSliders.module.css";
+import style from "./PlantCard.module.css";
 import CardButton from "../cards/cardButton/CardButton";
 
-const CardsSliders = ({ model }) => {
+const PlantCard = ({ model }) => {
   return (
     <div className={style.container}>
       <img src={model.imgUrl} alt={model.name} className={style.image} />
@@ -15,4 +15,4 @@ const CardsSliders = ({ model }) => {
   );
 };
 
-export default CardsSliders;
+export default PlantCard;

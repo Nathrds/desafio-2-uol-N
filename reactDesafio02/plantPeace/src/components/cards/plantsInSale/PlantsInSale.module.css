@@ -8,14 +8,15 @@
     padding-bottom: 5%;
 }
 
-.sectionWeeks {
+.sectionPlants {
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    white-space: nowrap;
 }
 
-.sectionWeeks h1 {
+.sectionPlants h1 {
     font-weight: 700;
     font-family: var(--titulo-h1);
     text-align: center;

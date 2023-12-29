@@ -1,0 +1,11 @@
+.button {
+    display: flex;
+    height: 38.853px;
+    padding: 6.476px 12.951px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.094px;
+    border-radius: 19.427px;
+    border: 1.619px solid var(--color-primary-avacado, --color-primary-avacado);
+    background: var(--tab-grey-color);
+}
