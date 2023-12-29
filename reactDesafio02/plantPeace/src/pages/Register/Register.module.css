@@ -20,30 +20,34 @@
 }
 
 form {
+  border: 1px solid aqua;
   display: flex;
-  padding: 48px;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #f1f1f1;
+  justify-content: flex-start;
+  /* padding: 48px; */
+  background-color: var(--tab-grey-color);
 }
 
 label {
   border: 1px solid red;
-   display: flex;
-  padding: 48px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .imageStyle{
   filter: grayscale(100%);
+  flex-grow: 1;
 }
 
 .imageContainer{
-  border: 1px solid red;
-  width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content:flex-end;
+  border: 1px solid green;
+}
+
+.containerSection{
+  display: flex;
+  justify-content: flex-end;
 }
 
 input {
@@ -70,7 +74,6 @@ section {
   color: #000;
   display: flex;
   flex-direction: row;
-  padding: 16px 0px 0px;
 }
 
 .priceSection {
@@ -102,3 +105,4 @@ section {
   border: 1.5px solid var(--Dark-gray, #AFB2AA);
   background-color: #f1f1f1;
 }
+
