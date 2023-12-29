@@ -1,7 +1,7 @@
 import styles from "./Register.module.css";
 //import { useState, useEffect } from "react";
-//import SquareButton from "../../components/buttons/squareButton/SquareButton.jsx";
-import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
+import SquareButton from "../../components/buttons/squareButton/SquareButton.jsx";
+//import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
 
 const Register = () => {
   return (
@@ -20,26 +20,13 @@ const Register = () => {
           <h1 className={styles.h1Style}>Plant registration</h1>
 
           <span className={styles.spanStyle}>Plant name:</span>
-          <input
-            className={styles.inputStyle}
-            type="text"
-            name="plantName"
-            placeholder="Echinocereus Cactus"
-          />
+          <input className={styles.inputStyle} type="text" name="plantName" placeholder="Echinocereus Cactus" />
 
           <span className={styles.spanStyle}>Plant subtitle:</span>
-          <input
-            className={styles.inputStyle}
-            type="text"
-            name="plantSubtitle"
-            placeholder="A majestic addition to your plant collection"
-          />
+          <input className={styles.inputStyle} type="text" name="plantSubtitle" placeholder="A majestic addition to your plant collection" />
 
           <span className={styles.spanStyle}>Plant type:</span>
-          <input className={styles.inputStyle} type="text"
-            name="plantType"
-            placeholder="Cactus"
-          />
+          <input className={styles.inputStyle} type="text" name="plantType" placeholder="Cactus" />
 
           <section className={styles.priceSection}>
             <div>
@@ -52,6 +39,7 @@ const Register = () => {
               <input className={styles.priceStyle} type="text" name="plantDiscount" placeholder="20%" />
             </div>
           </section>
+          
           <span className={styles.spanStyle}>Label:</span>
           <section className={styles.section}>
             <div className={styles.radioStyle}>
@@ -70,7 +58,7 @@ const Register = () => {
           <span className={styles.spanStyle}>Description:</span>
           <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Ladyfinger cactus..."/>
 
-          <button>Register</button>
+          <SquareButton/>
         </label>
       </form>
     </div>
