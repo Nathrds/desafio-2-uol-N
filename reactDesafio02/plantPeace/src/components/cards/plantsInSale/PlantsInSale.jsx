@@ -1,9 +1,7 @@
 import React from "react";
-import { dataPlants } from "../../../data/jsonData";
 import style from "./PlantsInSale.module.css"
-import CardsSlider from "../../sliders/CardsSliders";
 
-const PlantsInSale = () => {
+const PlantsInSale = ({plants}) => {
     return (
         <div className={style.container}>
             <section className={style.sectionPlants}>
@@ -13,7 +11,6 @@ const PlantsInSale = () => {
                 </h1>
             </section>
             <section className={style.cards}>
-                <CardsSlider model={dataPlants["plants"]} />
             </section>
         </div>
         
