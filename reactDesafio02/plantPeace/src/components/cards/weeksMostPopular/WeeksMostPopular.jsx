@@ -13,10 +13,10 @@ const WeeksMostPopular = () => {
                 </h1>
             </section>
             <section className={style.cards}>
-                <CardWeeksMostPopular image={dataPlants["plants"][0]["imgUrl"]} title={dataPlants["plants"][0]["name"]} price={dataPlants["plants"][0]["price"]}/>
-                <CardWeeksMostPopular image={dataPlants["plants"][0]["imgUrl"]} title={dataPlants["plants"][0]["name"]} price={dataPlants["plants"][0]["price"]}/>
-                <CardWeeksMostPopular image={dataPlants["plants"][0]["imgUrl"]} title={dataPlants["plants"][0]["name"]} price={dataPlants["plants"][0]["price"]}/>
-            </section>
+                <CardWeeksMostPopular model={dataPlants["plants"][0]} />
+                <CardWeeksMostPopular model={dataPlants["plants"][0]} />
+                <CardWeeksMostPopular model={dataPlants["plants"][0]} />
+               </section>
         </div>
         
     )

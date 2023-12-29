@@ -1,12 +1,18 @@
 import React from "react";
-import styles from "./CardWeeksMostPopular.module.css";
+import style from "./CardWeeksMostPopular.module.css";
+import CardButton from "../../cardButton/CardButton";
 
-const CardWeeksMostPopular = ({image, title, price}) => {
-    return <div className={styles.container}>
-        <img src={image} alt={title} className={styles.image} />
-        <h2 className={styles.title}>{title}</h2>
-        <p className={styles.price}>{price}</p>
+const CardWeeksMostPopular = ({ model }) => {
+  return (
+    <div className={style.container}>
+      <img src={model.imgUrl} alt={model.name} className={style.image} />
+      <div className={style.content}>
+        <h2 className={style.name}>{model.name}</h2>
+        <p className={style.price}>{model.price}</p>
+        <CardButton label={model["label"][0]}/>
+      </div>
     </div>
-}
+  );
+};
 
 export default CardWeeksMostPopular;
