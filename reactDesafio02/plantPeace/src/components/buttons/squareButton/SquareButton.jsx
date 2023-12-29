@@ -1,10 +1,10 @@
 import styles from "./SquareButton.module.css"
 import PropTypes from 'prop-types'
 
-const SquareButton = () => {
+const SquareButton = ({title}) => {
   return (
     <div className={styles.container}>
-      <button className={styles.squareButton}>Register</button>
+      <button className={styles.squareButton}>{title}</button>
     </div>
   )
 }

@@ -1,5 +1,4 @@
-import React from "react";
-import { dataPlants } from "../../../data/jsonData";
+import { dataPlants } from "../../../data/db.json";
 import style from "./WeeksMostPopular.module.css"
 import PlantCard from "../../cards/card/PlantCard";
 
