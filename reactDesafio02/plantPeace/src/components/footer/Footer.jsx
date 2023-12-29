@@ -16,13 +16,13 @@ const Footer = () => {
                 <section className={styles.sectionFooter}>
                     <h2>Links</h2>
                     <NavLink className={styles.navLink}>About Us</NavLink>
-                    <NavLink className={styles.navLink}>Products</NavLink>
+                    <NavLink to="/products" className={styles.navLink}>Products</NavLink>
                     <NavLink className={styles.navLink}>Blogs</NavLink>
                 </section>
                 <section className={styles.sectionFooter}>
                     <h2>Community</h2>
                     <NavLink className={styles.navLink}>About Us</NavLink>
-                    <NavLink className={styles.navLink}>Products</NavLink>
+                    <NavLink to="/products" className={styles.navLink}>Products</NavLink>
                     <NavLink className={styles.navLink}>Blogs</NavLink>
                 </section>
             </nav>

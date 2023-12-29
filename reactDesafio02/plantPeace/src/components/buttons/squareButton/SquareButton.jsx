@@ -1,6 +1,7 @@
 import styles from "./SquareButton.module.css"
 import PropTypes from 'prop-types'
 
+
 const SquareButton = ({title}) => {
   return (
     <div className={styles.container}>
