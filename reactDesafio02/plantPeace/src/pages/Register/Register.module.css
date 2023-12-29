@@ -15,8 +15,8 @@
 }
 
 .spanStyle {
-  display: flex;
-  flex-direction: column;
+  border: 1px solid blue;
+  padding-top: 36px;
 }
 
 form {
@@ -24,6 +24,7 @@ form {
   padding: 48px;
   flex-direction: column;
   align-items: flex-start;
+  background-color: #f1f1f1;
 }
 
 label {
@@ -33,11 +34,13 @@ label {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .imageStyle{
   filter: grayscale(100%);
 }
 
 .imageContainer{
+  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: end;
@@ -60,6 +63,7 @@ input {
   border-radius: 4px;
   border: 1.5px solid var(--Dark-gray, #AFB2AA);
   width: 460px;
+  background-color: #f1f1f1;
 }
 
 section {
@@ -75,6 +79,10 @@ section {
   gap: 18px;
 }
 
+.priceStyle{
+  background-color: #f1f1f1;
+}
+
 .radioStyle{
   display: flex;
   margin: 0px 19px 0px 0px;
@@ -88,11 +96,9 @@ section {
 
 .largeTextarea {
   display: flex;
-  height: 125px;
-  padding: 12px 0px 12px 16px;
   align-items: flex-start;
-  gap: 10px;
-
+  padding: 10% 33%;
   border-radius: 4px;
   border: 1.5px solid var(--Dark-gray, #AFB2AA);
+  background-color: #f1f1f1;
 }
