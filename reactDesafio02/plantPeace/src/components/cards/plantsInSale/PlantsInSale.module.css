@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tab-grey-color);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.sectionPlants {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.sectionPlants h1 {
+    font-weight: 700;
+    font-family: var(--titulo-h1);
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 64px;
+}
+
+.lunarGreenText {
+    color: var(--color-primary-lunar-green);
+}
+
+.avacadoText {
+    color: var(--color-primary-avacado);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
