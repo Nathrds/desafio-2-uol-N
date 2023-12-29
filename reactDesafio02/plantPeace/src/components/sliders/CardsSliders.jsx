@@ -1,0 +1,18 @@
+import React from "react";
+import style from "./CardsSliders.module.css";
+import CardButton from "../cards/cardButton/CardButton";
+
+const CardsSliders = ({ model }) => {
+  return (
+    <div className={style.container}>
+      <img src={model.imgUrl} alt={model.name} className={style.image} />
+      <div className={style.content}>
+        <h2 className={style.name}>{model.name}</h2>
+        <p className={style.price}>{model.price}</p>
+        <CardButton label={model["label"][0]}/>
+      </div>
+    </div>
+  );
+};
+
+export default CardsSliders;
