@@ -1,19 +1,12 @@
 import styles from "./Register.module.css";
 //import { useState, useEffect } from "react";
 import SquareButton from "../../components/buttons/squareButton/SquareButton.jsx";
-//import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
+import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
+import { NavLink } from "react-router-dom";
 
 const Register = () => {
   return (
     <div className={styles.defaultContainer}>
-      
-      {/*
-      <section> 
-        <div className={styles.imageContainer}>
-          <img className={styles.imageStyle} src={plantImage} alt="Right plant" />
-        </div>
-      </section>
-      */}
       
       <form>
         <label>
@@ -57,9 +50,17 @@ const Register = () => {
 
           <span className={styles.spanStyle}>Description:</span>
           <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Ladyfinger cactus..."/>
+          
+          <NavLink>
+            <SquareButton title={"Register"}/>
+          </NavLink>
 
-          <SquareButton/>
         </label>
+          <section className={styles.containerSection}> 
+              <div className={styles.imageContainer}>
+                <img className={styles.imageStyle} src={plantImage} alt="Right plant" />
+              </div>
+          </section>
       </form>
     </div>
   );
