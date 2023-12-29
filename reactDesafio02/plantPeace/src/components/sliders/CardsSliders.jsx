@@ -1,17 +1,25 @@
-import style from "./CardsSliders.module.css";
-import CardButton from "../cards/cardButton/CardButton";
 
-const CardsSliders = ({ model }) => {
-  return (
-    <div className={style.container}>
-      <img src={model.imgUrl} alt={model.name} className={style.image} />
-      <div className={style.content}>
-        <h2 className={style.name}>{model.name}</h2>
-        <p className={style.price}>{model.price}</p>
-        <CardButton label={model["label"][0]}/>
-      </div>
-    </div>
-  );
-};
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export default CardsSliders;
+const CardsSlider = ({ data }) => {
+
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    };
+  
+    return (
+      <Slider {...settings}>
+        {data.map((plant, index) => (
+          <PlantCard key={index} model={plant} />
+        ))}
+      </Slider>
+    );
+  };
+
+  export default CardsSlider;

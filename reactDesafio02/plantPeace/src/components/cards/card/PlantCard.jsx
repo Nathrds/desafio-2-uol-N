@@ -1,7 +1,5 @@
-import style from "./PlantCard.module.css";
-import CardButton from "../../buttons/cardButton/CardButton";
-
-import PropTypes from 'prop-types';
+import style from "./PlantCard.module.css"
+import CardButton from "../cardButton/CardButton";
 
 const PlantCard = ({ model }) => {
   return (
