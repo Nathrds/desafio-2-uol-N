@@ -1,8 +1,8 @@
-import { dataPlants } from "../../../data/db.json";
-import style from "./WeeksMostPopular.module.css"
-import PlantCard from "../../cards/card/PlantCard";
+import React from "react";
 
-const WeeksMostPopular = () => {
+import style from "./WeeksMostPopular.module.css"
+
+const WeeksMostPopular = ({plants}) => {
     return (
         <div className={style.container}>
             <section className={style.sectionWeeks}>
@@ -12,9 +12,7 @@ const WeeksMostPopular = () => {
                 </h1>
             </section>
             <section className={style.cards}>
-                <PlantCard model={dataPlants["plants"][0]} />
-                <PlantCard model={dataPlants["plants"][0]} />
-                <PlantCard model={dataPlants["plants"][0]} />
+
             </section>
         </div>
         
