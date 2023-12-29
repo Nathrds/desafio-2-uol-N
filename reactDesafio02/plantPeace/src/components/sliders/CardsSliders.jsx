@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./CardsSliders.module.css";
 import CardButton from "../cards/cardButton/CardButton";
 
