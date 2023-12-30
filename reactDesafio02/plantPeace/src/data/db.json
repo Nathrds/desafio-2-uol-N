@@ -61,21 +61,21 @@
     {
       "id":2,
       "name": "Matheus Henrique",
-      "age": "00",
+      "age": "sua idade",
       "city": "sua cidade aqui",
       "aboutMe": "Um pouco sobre você"
     },
     {
       "id":3,
       "name": "Thiago Almeida",
-      "age": "00",
+      "age": "sua idade",
       "city": "sua cidade aqui",
       "aboutMe": "Um pouco sobre você"
     },
     {
       "id":4,
       "name": "Vinicius Leite",
-      "age": "00",
+      "age": "sua idade",
       "city": "sua cidade aqui",
       "aboutMe": "Um pouco sobre você"
     }
