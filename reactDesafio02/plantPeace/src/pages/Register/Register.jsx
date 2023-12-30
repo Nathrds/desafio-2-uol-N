@@ -9,10 +9,12 @@ const Register = () => {
   return (
     <div className={styles.defaultContainer}>
       <form>
-
         <section className={styles.formStyle}>
           <label>
-            <h1 className={styles.h1Style}>Plant registration</h1>
+            
+            <div className={styles.h1Style}>
+              <h1>Plant registration</h1>
+            </div>
 
             <span className={styles.spanStyle}>Plant name:</span>
             <input className={styles.inputStyle} type="text" name="plantName" placeholder="Echinocereus Cactus" />
@@ -36,23 +38,28 @@ const Register = () => {
             </section>
             
             <span className={styles.spanStyle}>Label:</span>
-            <section className={styles.section}>
-              <div className={styles.radioStyle}>
-                <input type="radio" name="indoor" />
-                <label className={styles.radioText}>Indoor</label>
-              </div>
-              <div className={styles.radioStyle}>
-                <input type="radio" name="outdoor" />
-                <label className={styles.radioText}>Outdoor</label>
-              </div>
+              <section className={styles.section}>
+                <div className={styles.radioStyle}>
+                  <input type="radio" name="plantLocation" value="indoor" id="indoor" />
+                  <label htmlFor="indoor" className={styles.radioText}>Indoor</label>
+                </div>
+                <div className={styles.radioStyle}>
+                  <input type="radio" name="plantLocation" value="outdoor" id="outdoor" />
+                  <label htmlFor="outdoor" className={styles.radioText}>Outdoor</label>
+                </div>
             </section>
+
             
             <span className={styles.spanStyle}>Features:</span>
-            <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Species: Echinocereus..."/>
-
-            <span className={styles.spanStyle}>Description:</span>
-            <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Ladyfinger cactus..."/>
+            <div className={styles.textareaStyle}>
+              <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Species: Echinocereus..."/>
+            </div>
             
+            <span className={styles.spanStyle}>Description:</span>
+            <div className={styles.textareaStyle}>
+              <textarea className={styles.largeTextarea} type="text" name="plantDiscount" placeholder="Ladyfinger cactus..."/>
+            </div>
+
             <div className={styles.regButtonDiv}>
               <NavLink className={styles.registerButton}>
                 <SquareButton title={"Register"}/>

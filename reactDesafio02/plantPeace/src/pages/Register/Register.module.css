@@ -10,6 +10,7 @@
   color: var(--Primary-Lunar-green, #354733);
   border-bottom: 1px solid #AFB2AA;
   padding-bottom: 8px;
+  width: 100%;
 }
 
 .defaultContainer {
@@ -37,7 +38,7 @@ form {
 }
 
 label {
-  /* border: 1px solid red; */
+  /* border: 1px solid red;  */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -112,12 +113,15 @@ section {
 
 .largeTextarea {
   display: flex;
+  width: 460px;
+  height: 125px;
+  padding: 12px 0px 12px 16px;
   align-items: flex-start;
-  padding: 10% 32.6%;
+
   border-radius: 4px;
   border: 1.5px solid var(--Dark-gray, #AFB2AA);
-  background-color: #f1f1f1;
   resize: none;
+  background-color: #f1f1f1;
 }
 
 .registerButton {
@@ -131,6 +135,5 @@ section {
 }
 
 .regButtonDiv{
-padding-top: 82px;
-
+  padding-top: 82px;
 }
