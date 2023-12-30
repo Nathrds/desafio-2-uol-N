@@ -14,7 +14,7 @@
 .undProducts {
     border: 1.5px solid #DDDEA0;
     box-shadow: 1px 1px 10px #0000001b;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     width: 30%;
     min-height: 863px;
     display: flex;
@@ -57,6 +57,6 @@
 }
 
 .buttonProducts {
-    border: 2px solid red;
+    /* border: 1px solid red; */
     margin: 26px auto;
 }
