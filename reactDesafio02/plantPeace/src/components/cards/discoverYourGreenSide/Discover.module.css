@@ -23,16 +23,12 @@
     margin-right: 0%;
 }
 
-.image1{
-    
-}
-
 .img2{
     display: flex;
     align-items: flex-start;
     width: 103%;
     height: 100%;
-    margin-top: -1086px;
+    margin-top: -1250px;
     margin-left: -21px;
     filter: grayscale(100%);
     order: 1;
@@ -110,12 +106,15 @@
 .learn{
     display: flex;
     line-height: 24.72px;
-    margin-top: 380px;
+    padding-top: 525px;
     margin-left: 100px;
     order: 2;
 
 }
 
 .button{
+    display: flex;
+    padding-top: 24px;
     z-index: 1;
+    padding-left: 80px;
 }
