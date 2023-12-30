@@ -4,7 +4,7 @@ import style from "./WeeksMostPopular.module.css"
 
 const WeeksMostPopular = ({plants}) => {
     return (
-        <div className={style.container}>
+        <div id= "sectionScroll" className={style.container}>
             <section className={style.sectionWeeks}>
                 <h1>
                     <span className={style.lunarGreenText}>This Weeks Most Popular</span>
