@@ -1,10 +1,12 @@
 // import React from 'react'
 
-import styles from './CardMoreAboutPlant.module.css'
+import styles from './MoreAbout.module.css'
 
 const CardMoreAboutPlant = () => {
   return (
-    <div className={styles.container}>CardMoreAboutPlant</div>
+    <div className={styles.container}>
+      <h1>CardMoreAboutPlant</h1>
+    </div>
   )
 }
 

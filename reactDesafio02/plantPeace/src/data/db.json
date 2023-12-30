@@ -48,5 +48,36 @@
       "description": "These come in shades of red, pink, yellow, orange and cream and can last for many months. It makes a lovely contrast to other succulent plants.",
       "imgUrl": "assets/modernPicture4.png"
     }
+  ],
+
+  "aboutUs": [
+    {
+      "id":1,
+      "name": "Nathália Rodrigues",
+      "age": "27",
+      "city": "Brasília-DF",
+      "aboutMe": "Top Secret"
+    },
+    {
+      "id":2,
+      "name": "Matheus Henrique",
+      "age": "00",
+      "city": "sua cidade aqui",
+      "aboutMe": "Um pouco sobre você"
+    },
+    {
+      "id":3,
+      "name": "Thiago Almeida",
+      "age": "00",
+      "city": "sua cidade aqui",
+      "aboutMe": "Um pouco sobre você"
+    },
+    {
+      "id":4,
+      "name": "Vinicius Leite",
+      "age": "00",
+      "city": "sua cidade aqui",
+      "aboutMe": "Um pouco sobre você"
+    }
   ]
 }
