@@ -8,6 +8,7 @@ import Home from './pages/Home/Home'
 import Register from './pages/Register/Register'
 import Products from './pages/Products/Products'
 import AboutUs from './pages/AboutUs/AboutUs'
+import CardMoreAboutPlant from './components/cards/cardMoreAboutPlant/CardMoreAboutPlant'
 
 function App() {
 
@@ -21,6 +22,11 @@ function App() {
             <Route path='/register' element={<Register />} />
             <Route path='/products' element={<Products />} />
             <Route path='/aboutus' element={<AboutUs />} />
+          </Routes>
+        </div>
+        <div>
+          <Routes>
+            <Route path='/moreabout' element={<CardMoreAboutPlant />}/>
           </Routes>
         </div>
         <Footer />
