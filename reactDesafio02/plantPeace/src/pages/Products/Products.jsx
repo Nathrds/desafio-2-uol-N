@@ -10,7 +10,7 @@ const Products = () => {
     async function fetchProducts() {
       const response = await fetch("http://localhost:3000/plants")
       if (!response.ok) {
-        console.log("ERROR")
+        throw new Error("Failed, please try again later.")
       }
 
       const listProducts = await response.json()
