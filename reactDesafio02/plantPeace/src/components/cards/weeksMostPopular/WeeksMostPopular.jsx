@@ -1,8 +1,10 @@
 import React from "react";
-
 import style from "./WeeksMostPopular.module.css"
+import CardsSlider from "../../sliders/CardsSliders";
 
-const WeeksMostPopular = ({plants}) => {
+
+
+export const WeeksMostPopular = () => {
     return (
         <div className={style.container}>
             <section className={style.sectionWeeks}>
@@ -11,11 +13,10 @@ const WeeksMostPopular = ({plants}) => {
                     <span className={style.avacadoText}> And<br/>Best Selling</span>
                 </h1>
             </section>
-            <section className={style.cards}>
-
+            <section className={style.sectionWeeks}>
+                <CardsSlider/>
             </section>
         </div>
-        
     )
 }
 
