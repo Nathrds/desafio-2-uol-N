@@ -21,7 +21,7 @@ const Header = () => {
                 <NavLink to="/products" className={styles.linkPages}>Products</NavLink>
             </li>
             <li>
-                <NavLink className={styles.linkPages}>About Us</NavLink>
+                <NavLink to="/aboutus" className={styles.linkPages}>About Us</NavLink>
             </li>
         </ul>
         <NavLink>

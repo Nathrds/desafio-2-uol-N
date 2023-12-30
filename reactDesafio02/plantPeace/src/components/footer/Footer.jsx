@@ -21,7 +21,7 @@ const Footer = () => {
                 </section>
                 <section className={styles.sectionFooter}>
                     <h2>Community</h2>
-                    <NavLink className={styles.navLink}>About Us</NavLink>
+                    <NavLink to="/aboutus" className={styles.navLink}>About Us</NavLink>
                     <NavLink to="/products" className={styles.navLink}>Products</NavLink>
                     <NavLink className={styles.navLink}>Blogs</NavLink>
                 </section>

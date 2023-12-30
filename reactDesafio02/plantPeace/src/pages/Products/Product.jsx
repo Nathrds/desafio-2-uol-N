@@ -1,5 +1,8 @@
-import PropTypes from 'prop-types'
 import styles from "./Products.module.css"
+
+import PropTypes from 'prop-types'
+import { NavLink } from "react-router-dom";
+
 import SquareButton from '../../components/buttons/squareButton/SquareButton';
 
 export default function Product ({ plants }) {
@@ -10,7 +13,9 @@ export default function Product ({ plants }) {
             <h2>{plants.subtitle}</h2>
             <p>{plants.price}</p>
             <div className={styles.buttonProducts}>
+            <NavLink>
                 <SquareButton title={"More"} />
+            </NavLink>
             </div>
         </li>
     )
