@@ -14,7 +14,7 @@ export const WeeksMostPopular = () => {
                 </h1>
             </section>
             <section className={style.sectionWeeks}>
-                <CardsSlider/>
+                <CardsSlider discount={false}/>
             </section>
         </div>
     )

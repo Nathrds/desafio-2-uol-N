@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./PlantsInSale.module.css"
+import CardsSlider from "../../sliders/CardsSliders";
 
-const PlantsInSale = ({plants}) => {
+const PlantsInSale = () => {
     return (
         <div className={style.container}>
             <section className={style.sectionPlants}>
@@ -10,7 +11,8 @@ const PlantsInSale = ({plants}) => {
                     <span className={style.lunarGreenText}> Sale</span>
                 </h1>
             </section>
-            <section className={style.cards}>
+            <section className={style.sectionPlants}>
+                <CardsSlider discount={true}/>
             </section>
         </div>
         

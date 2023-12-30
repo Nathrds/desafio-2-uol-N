@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const CardsSlider = () => {
+const CardsSlider = ({discount}) => {
   const [loadedPlants, setLoadedPlants] = useState([])
 
   useEffect (() => {
@@ -23,11 +23,6 @@ const CardsSlider = () => {
     fetchProducts()
   }, []);
 
-  const settings = {
-    slidesPerView: 3,
-    pagination: true
-  };
-
   return (
     <>
     {loadedPlants.length && 
@@ -37,10 +32,11 @@ const CardsSlider = () => {
     spaceBetween={70} 
     pagination={{clickable: true}}
     grabCursor={true}
+    scrollbar={true}
     >
       {loadedPlants.map((item) => (
         <SwiperSlide key={item.id}>
-          <PlantCard model={item}/>
+          <PlantCard model={item} discount={discount}/>
         </SwiperSlide>
       ))}
     </Swiper>
