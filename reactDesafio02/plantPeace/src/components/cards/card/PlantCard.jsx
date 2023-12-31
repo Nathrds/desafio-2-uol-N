@@ -4,7 +4,16 @@ import PropTypes from 'prop-types';
 
 const PlantCard = ({ model, discount }) => {
 
-  const discountPercentage = model.discountPercentage;
+  
+  let newPrice;
+  let discountAmount;
+  
+  if (!isNaN(model.discountPercentage) && !isNaN(model.price) && model.price !== 0) {
+    discountAmount = (model.discountPercentage / 100) * model.price;
+    newPrice = model.price - discountAmount;
+  } else {
+    newPrice = 0;
+  }
   
   return (
     <div className={style.container}>
@@ -15,10 +24,10 @@ const PlantCard = ({ model, discount }) => {
           {
           discount === true 
           ? <div className={style.discountDiv}>
-              <p className={style.price}>{model.price}</p>
-              <p className={style.discount}>${discountPercentage}</p>
+              <p className={style.price}>${model.price.toFixed(2)}</p>
+              <p className={style.discount}>${newPrice.toFixed(2)}</p>
             </div>
-          : <p className={style.price}>{model.price}</p>  
+          : <p className={style.price}>${model.price.toFixed(2)}</p>  
           }
         </div>
         <CardButton label={model["label"][0]}/>
@@ -31,7 +40,7 @@ PlantCard.propTypes = {
   model: PropTypes.shape({
     imgUrl: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
     label: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
