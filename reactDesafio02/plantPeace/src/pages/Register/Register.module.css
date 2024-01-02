@@ -127,11 +127,45 @@ section {
 .registerButton {
   display: flex;
   width: 476px;
+  padding: 20px 193px;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 
   border-radius: 4px;
+  color: #f1f1f1;
   background: var(--Primary-Lunar-green, #354733);
+  border: var(--color-primary-avacado);
+
+  color: var(--white, #FCFCFC);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; 
+}
+
+.registerButton:hover {
+  display: flex;
+  width: 476px;
+  padding: 20px 193px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 4px;
+  color: #f1f1f1;
+  background-color: var(--color-primary-avacado);
+  border: var(--color-primary-avacado);
+
+  color: var(--white, #FCFCFC);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; 
 }
 
 .regButtonDiv{
