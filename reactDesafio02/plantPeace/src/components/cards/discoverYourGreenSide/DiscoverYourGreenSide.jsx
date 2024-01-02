@@ -18,10 +18,12 @@ const DiscoverYourGreenSide = () => {
                 allowing you to create your own green oasis.
             </p>
             <section className={styles.button}>
+                <a href="#sectionScroll">
                     <SquareButton title={"Shop now"} />
+                </a>    
             </section>
             <section className={styles.learn}>
-                <a href="#sectionScroll">
+                <a href="#scrollLearn">
                     <p className={styles.p2}>Learn Gardening &rarr;</p>
                 </a>
             </section>
@@ -31,9 +33,7 @@ const DiscoverYourGreenSide = () => {
         </div>
         
         <div className={styles.img1}>
-            <a href="#scrollLearn">
                 <img className={styles.image1} src={RightImage} alt="Right plant" />
-            </a>
         </div>
  </div>
   )
