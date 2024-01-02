@@ -64,7 +64,7 @@ p, .navLink {
 
 .footerWithImg {
     border-top: 1px solid #DDDEA0;
-    max-width: 1700px;
+    max-width: 90%;
     color: #fff;
     display: flex;
     flex-direction: row;

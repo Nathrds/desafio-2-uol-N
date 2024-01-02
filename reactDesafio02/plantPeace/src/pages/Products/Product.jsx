@@ -11,7 +11,7 @@ export default function Product ({ plants }) {
             <img src={`src/${plants.imgUrl}`} alt={plants.name} />
             <h1>{plants.name}</h1>
             <h2>{plants.subtitle}</h2>
-            <p>{plants.price}</p>
+            <p>R$ {plants.price}</p>
             <div className={styles.buttonProducts}>
             <NavLink to="/moreabout">
                 <SquareButton title={"More"} />

@@ -3,20 +3,22 @@
 }
 
 .allProducts {  
+    border: 2px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 64px auto;
+    margin: 2%;
+    max-width: 100%;
 }
 
 .undProducts {
     border: 1.5px solid #DDDEA0;
+    border-radius: 5px;
     box-shadow: 1px 1px 10px #0000001b;
-    /* border-radius: 20px; */
-    width: 30%;
-    min-height: 863px;
+    max-width: 30%;
+    height: 52em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,9 +26,9 @@
 }
 
 .undProducts img {
-    /* border: 1px solid green; */
     border-radius: 20px;
     margin: 26px auto;
+    max-width: 100%;
 }
 
 .undProducts h1, h2, p {
@@ -36,27 +38,33 @@
 
 .undProducts h1 {
     color: #354733;
-    font-size: 54px;
+    font-size: 282%;
     text-align: center;
 }
 
 .undProducts h2 {
     color: #8A9B6E;
     text-align: center;
-    font-size: 24px;
+    font-size: 150%;
 }
 
 .undProducts p {
     background-color: #FCFCFC;
     border: 1.5px solid #DDDEA0;
     color: #354733;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 100%;
     text-align: center;
 }
 
 .buttonProducts {
-    /* border: 1px solid red; */
-    margin: 26px auto;
+    border: 2px solid #354733;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+.buttonProducts:hover {
+    cursor: pointer;
+    border: 2px solid #8A9B6E;
 }

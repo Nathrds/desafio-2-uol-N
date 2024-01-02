@@ -1,8 +1,10 @@
+import styles from "./AboutUs.module.css"
+
 import PropTypes from 'prop-types';
 
 const AboutUs = ({aboutUs}) => {
   return (
-    <div>
+    <div className={styles.cotainerAboutUs}>
       <h2>{aboutUs.name}</h2>
       <p>{aboutUs.age}</p>
       <p>{aboutUs.city}</p>

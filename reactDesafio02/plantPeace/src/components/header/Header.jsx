@@ -7,9 +7,7 @@ const Header = () => {
 
   return (
     <nav className={styles.navHeader}>
-        <NavLink to="/">
             <img src={Logo} alt="Site logo with a plant" />
-        </NavLink>
         <ul>
             <li>
                 <NavLink to="/" className={styles.linkPages}>Home</NavLink>
