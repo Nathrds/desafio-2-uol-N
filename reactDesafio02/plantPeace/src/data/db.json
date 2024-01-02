@@ -59,91 +59,40 @@
       "features": "Species: Kalanchoe blossfeldiana - also known as flaming Katy - is a plant known for its brilliant flower colours. Blooming Season: Kalanchoe tomentosa is known as the panda plant and is grown for its attractive soft, velvety grey leaves. Shipping: Kalanchoe blossfeldiana are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
       "description": "These come in shades of red, pink, yellow, orange and cream and can last for many months. It makes a lovely contrast to other succulent plants.",
       "imgUrl": "assets/modernPicture4.png"
-    },
-    {
-      "plantName": "",
-      "plantSubtitle": "",
-      "plantType": "",
-      "plantPrice": "",
-      "plantDiscount": "",
-      "plantLocation": "",
-      "features": "",
-      "description": "",
-      "id": 5
-    },
-    {
-      "plantName": "",
-      "plantSubtitle": "",
-      "plantType": "",
-      "plantPrice": "",
-      "plantDiscount": "",
-      "plantLocation": "",
-      "features": "",
-      "description": "",
-      "id": 6
-    },
-    {
-      "plantName": "",
-      "plantSubtitle": "",
-      "plantType": "",
-      "plantPrice": "",
-      "plantDiscount": "",
-      "plantLocation": "",
-      "features": "",
-      "description": "",
-      "id": 7
-    },
-    {
-      "plantName": "Castor Bean",
-      "plantSubtitle": "Killer",
-      "plantType": "Euphorbiaceae",
-      "plantPrice": "200",
-      "plantDiscount": "20",
-      "plantLocation": "outdoor",
-      "features": "It is used in the production of synthetic resins, plastics, fibres, paints, varnishes, and various chemicals including drying oils and plasticizers.",
-      "description": "It is the sole species in the monotypic genus, Ricinus, and subtribe, Ricininae. The evolution of castor and its relation to other species are currently being studied using modern genetic tools.",
-      "id": 8
-    },
-    {
-      "plantName": "Rodgersia aesculifolia",
-      "plantSubtitle": "chestnut-leaved rodgersia",
-      "plantType": "Aquatic Plant",
-      "plantPrice": "150",
-      "plantDiscount": "80",
-      "plantLocation": "indoor",
-      "features": "R. aesculifolia is a robust herbaceous perennial approximately 1.2m to 2m high, with strongly veined palmately divided leaves with 5-9 obovate leaflets to 25cm in length. Small creamy-white or pink flowers are borne in open panicles to 60cm in length",
-      "description": "Rodgersia are moisture-loving rhizomatous herbaceous perennials with handsome, often attractively tinted, leaves that may be pinnately or palmately divided, and small star-shaped flowers in large conical panicles in summer, remaining showy in fruit",
-      "id": 9
     }
   ],
   "aboutUs": [
     {
       "id": 1,
       "name": "Nathália Rodrigues",
-      "age": "27",
       "city": "Brasília-DF",
-      "aboutMe": "Top Secret"
+      "age": "Age: 27",
+      "aboutMe": "About Me: Good question",
+      "imgMe": "assets/imgAboutMe/imgAnxiety.PNG"
     },
     {
       "id": 2,
       "name": "Matheus Henrique",
-      "age": "sua idade",
       "city": "sua cidade aqui",
-      "aboutMe": "Um pouco sobre você"
+      "age": "Age: sua idade",
+      "aboutMe": "About Me: Um pouco sobre você",
+      "imgMe": "assets/imgAboutMe/imgBoredom.PNG"
     },
     {
       "id": 3,
       "name": "Thiago Almeida",
-      "age": "20",
       "city": "Belo Horizonte-MG / Garanhuns-PE",
-      "aboutMe": "I don't know yet ;-;"
+      "age": "Age: 20",
+      "aboutMe": "About Me: I don't know yet ;-;",
+      "imgMe": "assets/imgAboutMe/imgFear.PNG"
     },
     {
       "id": 4,
       "name": "Vinicius Leite",
-      "age": "sua idade",
       "city": "sua cidade aqui",
-      "aboutMe": "Um pouco sobre você"
+      "age": "Age: sua idade",
+      "aboutMe": "About Me: Um pouco sobre você",
+      "imgMe": "assets/imgAboutMe/imgAnger.PNG"
     }
   ]
 }
