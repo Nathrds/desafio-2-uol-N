@@ -19,6 +19,7 @@ const StepsToTakeCare = () => {
         <h1>Steps To Take Care Of Your <span>Plants</span></h1>
         <p>By following these three steps - proper watering, appropriate sunlight, and providing essential nutrients - you all be well on your way to maintaining healthy and thriving plants.</p>
       </section>
+
       <div className={styles.containerStepsCards}>
         <section className={styles.sectionStepsD_S_F}>
           <img src={elipseDrop} />
@@ -36,6 +37,7 @@ const StepsToTakeCare = () => {
           <p>Choose a suitable fertilizer based on the specific needs of your plants, whether it is a balanced or specialized formula.</p>
         </section>
       </div>
+
       <div className={styles.containerStepsImage}>
         <section className={styles.sectionSetepsImage}>
           <div className={styles.sectionImage01}><img src={image01Steps} alt="" /></div>

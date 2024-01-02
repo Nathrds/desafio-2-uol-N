@@ -26,7 +26,7 @@
     color: var(--color-primary-lunar-green);
 }
 
-.linkPages:hover, .linkPages:active {
+.linkPages:hover {
     color: var(--color-primary-avacado);
     cursor: pointer;
 }

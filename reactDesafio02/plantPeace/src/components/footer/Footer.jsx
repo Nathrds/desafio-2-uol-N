@@ -17,13 +17,17 @@ const Footer = () => {
                     <h2>Links</h2>
                     <NavLink to="/aboutus" className={styles.navLink}>About Us</NavLink>
                     <NavLink to="/products" className={styles.navLink}>Products</NavLink>
-                    <NavLink className={styles.navLink}>Blogs</NavLink>
+                    <NavLink className={styles.navLink} to="https://www.rhs.org.uk/plants/types" target="_blank" rel="noopener noreferrer">
+                        Blogs
+                    </NavLink>
                 </section>
                 <section className={styles.sectionFooter}>
                     <h2>Community</h2>
                     <NavLink to="/aboutus" className={styles.navLink}>About Us</NavLink>
                     <NavLink to="/products" className={styles.navLink}>Products</NavLink>
-                    <NavLink className={styles.navLink}>Blogs</NavLink>
+                    <NavLink className={styles.navLink} to="https://www.rhs.org.uk/plants/types" target="_blank" rel="noopener noreferrer">
+                        Blogs
+                    </NavLink>
                 </section>
             </nav>
         </div>
