@@ -1,1 +1,25 @@
+.containerAboutPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 2%;
+}
 
+.cotainerAboutUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2%;
+    max-width: 35%;
+}
+
+.cotainerAboutUs img {
+    max-width: 30%;
+}
+
+.containerInfo {
+    max-width: 100%;
+    height: 15em;
+}
