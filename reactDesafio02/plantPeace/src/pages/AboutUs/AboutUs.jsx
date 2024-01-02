@@ -1,4 +1,4 @@
-//import styles from "./AboutUs.module.css"
+import styles from "./AboutUs.module.css"
 
 import AboutPage from "./db.aboutPage"
 import { useState, useEffect } from "react"
@@ -22,7 +22,7 @@ const AboutUs = () => {
   }, [])
 
   return (
-    <ul>
+    <ul className={styles.containerAboutPage}>
       {loadedAboutUS.map((aboutUs) => (
         < AboutPage key={aboutUs.id} aboutUs={aboutUs}/>
       ))}

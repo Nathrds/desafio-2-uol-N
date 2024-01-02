@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const SquareButton = ({title}) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.containerButton}>
       <button className={styles.squareButton}>{title}</button>
     </div>
   )

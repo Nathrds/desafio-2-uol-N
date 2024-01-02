@@ -12,5 +12,5 @@
 .squareButton:hover {
     background-color: var(--color-primary-avacado);
     border: 1px solid var(--color-primary-avacado);
-    cursor: pointer;
+    cursor: pointer;
 }
