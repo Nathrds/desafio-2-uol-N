@@ -14,7 +14,7 @@ import SquareButton from "../../buttons/squareButton/SquareButton"
 
 const StepsToTakeCare = () => {
   return (
-    <div className={styles.containerSteps}>
+    <div id="scrollLearn" className={styles.containerSteps}>
       <section className={styles.sectionSteps}>
         <h1>Steps To Take Care Of Your <span>Plants</span></h1>
         <p>By following these three steps - proper watering, appropriate sunlight, and providing essential nutrients - you all be well on your way to maintaining healthy and thriving plants.</p>
