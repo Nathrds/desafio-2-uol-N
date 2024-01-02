@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import style from "./WeeksMostPopular.module.css"
 import CardsSlider from "../../sliders/CardsSliders";
 
