@@ -19,7 +19,7 @@ const Header = () => {
         <div className={styles.menuIcon} onClick={toggleMenu}>
             ☰
         </div>
-        <ul className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
+        <ul hidden={!menuOpen} className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
             <li>
                 <NavLink to="/" className={styles.linkPages} onClick={toggleMenu}>
                     Home
@@ -48,4 +48,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header 

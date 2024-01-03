@@ -40,7 +40,7 @@
   
 @media screen and (max-width: 770px) {
     .navHeader {
-        padding: 2% 5%;
+        padding: 2% 5% 2% 5%;
     }
 
     .navHeader ul {
@@ -53,23 +53,31 @@
         display: block;
     }
 
+    .navHeader{
+        position: relative;
+    }
+
     .navHeader ul {
         display: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
 
     .navLinks {
         /* display: none; */
+        display: flex;
         flex-direction: column;
         position: absolute;
         justify-content: center;
-        top: 80px;
+        top: 100%;
         left: 0;
         background-color: var(--tab-grey-color);
         width: 100%;
         z-index: 1;
     }
     
-    .navLinks .showMenu {
-       display: flex;
+    .showMenu {
+       display: flex !important;
     }
 }
