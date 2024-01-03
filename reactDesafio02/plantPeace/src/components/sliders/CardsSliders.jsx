@@ -6,55 +6,55 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const CardsSlider = ({discount}) => {
-  const [loadedPlants, setLoadedPlants] = useState([])
-  const [productsWithDiscount, setProductsWithDiscount] = useState([])
+const CardsSlider = ({ discount }) => {
+  const [loadedPlants, setLoadedPlants] = useState([]);
+  const [productsWithDiscount, setProductsWithDiscount] = useState([]);
 
-  useEffect (() => {
+  useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("http://localhost:3000/plants")
+      const response = await fetch("http://localhost:3000/plants");
       if (!response.ok) {
-        console.log("ERROR")
+        console.log("ERROR");
       }
 
       const listProducts = await response.json();
-      const productsWithDiscount = listProducts.filter(item => item.discountPercentage !== 0)
+      const slicedLoadedPlants = listProducts.slice(0, 10);
+      const slicedProductsWithDiscount = listProducts.filter(item => item.discountPercentage !== 0).slice(0, 10);
 
-      setProductsWithDiscount(productsWithDiscount)
-      setLoadedPlants(listProducts);
-
+      setLoadedPlants(slicedLoadedPlants);
+      setProductsWithDiscount(slicedProductsWithDiscount);
     }
-    fetchProducts()
+
+    fetchProducts();
   }, []);
 
   return (
     <>
-    {loadedPlants.length && 
-    <Swiper 
-    slidesPerView={3.8}
-    className={styles.slide} 
-    spaceBetween={70} 
-    pagination={{clickable: true}}
-    grabCursor={true}
-    scrollbar={true}
-    >
-      {!discount 
-      ? loadedPlants.map((item) => (
-        <SwiperSlide key={item.id}>
-          <PlantCard model={item} discount={discount}/>
-        </SwiperSlide>
-      ))
-      : productsWithDiscount.map((item) => (
-        <SwiperSlide key={item.id}>
-          <PlantCard model={item} discount={discount}/>
-        </SwiperSlide>
-      ))
+      {loadedPlants.length > 0 &&
+        <Swiper
+          slidesPerView={3.8}
+          className={styles.slide}
+          spaceBetween={70}
+          pagination={{ clickable: true }}
+          grabCursor={true}
+          scrollbar={true}
+        >
+          {!discount
+            ? loadedPlants.map((item) => (
+              <SwiperSlide key={item.id}>
+                <PlantCard model={item} discount={discount} />
+              </SwiperSlide>
+            ))
+            : productsWithDiscount.map((item) => (
+              <SwiperSlide key={item.id}>
+                <PlantCard model={item} discount={discount} />
+              </SwiperSlide>
+            ))
+          }
+        </Swiper>
       }
-    </Swiper>
-    }
-    {!loadedPlants.length && <p>VAZIO</p>}
+      {!loadedPlants.length && <p>VAZIO</p>}
     </>
-    
   );
 };
 
