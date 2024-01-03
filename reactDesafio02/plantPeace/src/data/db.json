@@ -66,32 +66,32 @@
       "id": 1,
       "name": "Nathália Rodrigues",
       "city": "Brasília-DF",
-      "age": "Age: 27",
-      "aboutMe": "About Me: Good question",
+      "age": "27",
+      "aboutMe": "Good question ...",
       "imgMe": "assets/imgAboutMe/imgAnxiety.PNG"
     },
     {
       "id": 2,
       "name": "Matheus Henrique",
       "city": "Correntes-PE",
-      "age": "Age: 21",
-      "aboutMe": "About Me: I know that I know nothing",
+      "age": "21",
+      "aboutMe": "I know that I know nothing.",
       "imgMe": "assets/imgAboutMe/imgBoredom.PNG"
     },
     {
       "id": 3,
       "name": "Thiago Almeida",
       "city": "Belo Horizonte-MG / Garanhuns-PE",
-      "age": "Age: 20",
-      "aboutMe": "About Me: I don't know yet ;-;",
+      "age": "20",
+      "aboutMe": "I don't know yet ;-;",
       "imgMe": "assets/imgAboutMe/imgFear.PNG"
     },
     {
       "id": 4,
       "name": "Vinicius Leite",
       "city": "Garanhuns-PE",
-      "age": "Age: 21",
-      "aboutMe": "About Me: Gamer, programmer, guitar addict and fascinated by universe",
+      "age": "21",
+      "aboutMe": "It's none of your business!",
       "imgMe": "assets/imgAboutMe/imgAnger.PNG"
     }
   ]

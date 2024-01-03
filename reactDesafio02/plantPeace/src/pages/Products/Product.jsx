@@ -26,6 +26,6 @@ Product.propTypes = {
       imgUrl: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       subtitle: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
     }).isRequired,
   };
