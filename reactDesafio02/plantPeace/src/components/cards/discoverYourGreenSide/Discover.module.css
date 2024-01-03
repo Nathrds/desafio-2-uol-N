@@ -120,6 +120,8 @@
     margin-left: 5rem;
     order: 2;
     position: static;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .learn a {
