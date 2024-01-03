@@ -1,7 +1,5 @@
 import styles from './Discover.module.css'
 
-// import { NavLink } from "react-router-dom"
-
 import RightImage from "../../../assets/img/imgDiscovery/right plant p.png";
 import LeftImage from "../../../assets/img/imgDiscovery/left plant p.png";
 

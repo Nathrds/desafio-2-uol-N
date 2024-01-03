@@ -1,0 +1,21 @@
+.title{
+    font-size: 94px;
+}
+
+h2{
+    font-size: 24px;
+    color: #AFB2AA; 
+}
+
+.features{
+    font-size: 24px;
+}
+
+.topics{
+    font-family: var(--titulo-p);
+    font-size: 16px;
+}
+
+.description{
+    font-size: 24px;
+}
