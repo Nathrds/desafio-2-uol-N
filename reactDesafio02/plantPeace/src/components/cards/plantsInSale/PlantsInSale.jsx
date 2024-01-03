@@ -11,7 +11,7 @@ const PlantsInSale = () => {
                     <span className={style.lunarGreenText}> Sale</span>
                 </h1>
             </section>
-            <section className={style.sectionPlants}>
+            <section className={style.cards}>
                 <CardsSlider discount={true}/>
             </section>
         </div>

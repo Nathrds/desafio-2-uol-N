@@ -34,7 +34,7 @@ const CardsSlider = ({ discount }) => {
         <Swiper
           slidesPerView={3.8}
           className={styles.slide}
-          spaceBetween={70}
+          spaceBetween={50}
           pagination={{ clickable: true }}
           grabCursor={true}
           scrollbar={true}

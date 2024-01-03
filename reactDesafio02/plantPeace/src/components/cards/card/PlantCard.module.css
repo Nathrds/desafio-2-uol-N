@@ -1,5 +1,5 @@
 .container {
-    height: 490px;
+    height: 470px;
     background-color: var(--background-color);
     flex-direction: column;
     align-items: flex-start;
@@ -38,6 +38,7 @@
 }
 
 .textCard {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 5px;

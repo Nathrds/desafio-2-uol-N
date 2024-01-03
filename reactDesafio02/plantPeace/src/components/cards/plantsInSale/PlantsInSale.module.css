@@ -9,7 +9,6 @@
 }
 
 .sectionPlants {
-    margin-left: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,4 +29,12 @@
 
 .avacadoText {
     color: var(--color-primary-avacado);
+}
+
+.cards {
+    margin-left: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
