@@ -90,14 +90,13 @@
     text-align: center;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 820px) {
     .containerInformation {
         padding: 5%;
     }
 
     .containerInformation {
         max-width: 100%;
-        /* padding: 90px 100px; */
     }
 
     .articleFooter {
