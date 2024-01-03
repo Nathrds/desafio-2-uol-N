@@ -7,8 +7,8 @@
 }
 
 .h1Style {
-  color: var(--Primary-Lunar-green, #354733);
   border-bottom: 1px solid #AFB2AA;
+  color: var(--Primary-Lunar-green, #354733);
   padding-bottom: 8px;
   width: 100%;
 }
@@ -23,7 +23,6 @@
 }
 
 .spanStyle {
-  /* border: 1px solid blue; */
   font-family: Inter;
   font-weight: bold;
   line-height: 22px;
@@ -31,53 +30,49 @@
 }
 
 form {
-  /* border: 1px solid aqua; */
+  background-color: var(--tab-grey-color);
   display: flex;
   width: 51.5%;
-  background-color: var(--tab-grey-color);
 }
 
-label {
-  /* border: 1px solid red;  */
+.formContainer {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-.imageStyle{
+.imageStyle {
   filter: grayscale(100%);
 }
 
-.imageContainer{
+.imageContainer {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   width: 50%;
-  /* border: 1px solid green; */
 }
 
-.containerSection{
+.containerSection {
   display: flex;
   justify-content: flex-end;
 }
 
 input {
-  display: flex;  
   align-items: flex-start;
-  padding: 12px 0px 12px 16px;
-  border-radius: 4px;
   border: 1.5px solid var(--Dark-gray, #AFB2AA);
+  border-radius: 4px;
+  display: flex;
+  padding: 12px 0px 12px 16px;
 }
 
 .inputStyle {
-  display: flex;
-  padding: 12px 0px 12px 16px;
   align-items: flex-start;
-  gap: 10px;
-
-  border-radius: 4px;
-  border: 1.5px solid var(--Dark-gray, #AFB2AA);
-  width: 460px;
   background-color: #f1f1f1;
+  border: 1.5px solid var(--Dark-gray, #AFB2AA);
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  padding: 12px 0px 12px 16px;
+  width: 460px;
 }
 
 section {
@@ -87,41 +82,57 @@ section {
 }
 
 .priceSection {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   gap: 18px;
   margin-top: 24px;
 }
 
-.priceStyle{
+.priceStyle {
   background-color: #f1f1f1;
 }
 
-.radioStyle{
-  display: flex;
-  margin: 0px 19px 0px 0px;
-}
-
-.radioText{
+.radioText {
   display: flex;
   flex-direction: row;
-  padding: 8px;
-
   font-family: Inter;
   font-weight: bold;
+  padding-left: 8px;
+}
+
+.radioStyle {
+  display: flex;
+  margin: 0px 19px 0px 0px;
+  padding-top: 10px;
+}
+
+input[type=radio] {
+  --s: 20px;
+  appearance: none;
+  background: radial-gradient(farthest-side, var(--color-primary-lunar-green) 100%, #0000) 50%/0 0 no-repeat content-box;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: inherit;
+  height: 1.25em;
+  padding: calc(var(--s)/8);
+  width: 1.25em;
+}
+
+input[type=radio]:checked {
+  background-size: 100%;
+  border-color: var(--color-primary-lunar-green);
 }
 
 .largeTextarea {
+  align-items: flex-start;
+  background-color: #f1f1f1;
+  border: 1.5px solid var(--Dark-gray, #AFB2AA);
+  border-radius: 4px;
   display: flex;
-  width: 460px;
   height: 125px;
   padding: 12px 0px 12px 16px;
-  align-items: flex-start;
-
-  border-radius: 4px;
-  border: 1.5px solid var(--Dark-gray, #AFB2AA);
   resize: none;
-  background-color: #f1f1f1;
+  width: 460px;
 }
 
 .registerButton {
