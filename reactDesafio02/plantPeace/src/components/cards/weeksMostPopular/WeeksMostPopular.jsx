@@ -13,7 +13,7 @@ export const WeeksMostPopular = () => {
                     <span className={style.avacadoText}> And<br/>Best Selling</span>
                 </h1>
             </section>
-            <section className={style.sectionWeeks}>
+            <section className={style.cards}>
                 <CardsSlider discount={false}/>
             </section>
         </div>

@@ -1,36 +1,37 @@
-import style from "./PlantCard.module.css"
+import style from "./PlantCard.module.css";
 import CardButton from "../../buttons/cardButton/CardButton";
 import PropTypes from 'prop-types';
 
 const PlantCard = ({ model, discount }) => {
-
-  
   let newPrice;
   let discountAmount;
-  
+
   if (!isNaN(model.discountPercentage) && !isNaN(model.price) && model.price !== 0) {
     discountAmount = (model.discountPercentage / 100) * model.price;
     newPrice = model.price - discountAmount;
   } else {
     newPrice = 0;
   }
-  
+
+  const maxTitleWidth = 20; 
+  const displayTitle = model.name.length > maxTitleWidth ? `${model.name.slice(0, maxTitleWidth)}...` : model.name;
+
   return (
     <div className={style.container}>
       <img src={`src/${model.imgUrl}`} alt={model.name} className={style.image} />
       <div className={style.content}>
         <div className={style.textCard}>
-          <h2 className={style.name}>{model.name}</h2>
-          {
-          discount === true 
-          ? <div className={style.discountDiv}>
+          <h2 className={style.name}>{displayTitle}</h2>
+          {discount === true ? (
+            <div className={style.discountDiv}>
               <p className={style.price}>${model.price.toFixed(2)}</p>
               <p className={style.discount}>${newPrice.toFixed(2)}</p>
             </div>
-          : <p className={style.price}>${model.price.toFixed(2)}</p>  
-          }
+          ) : (
+            <p className={style.price}>${model.price.toFixed(2)}</p>
+          )}
         </div>
-        <CardButton label={model["label"][0]}/>
+        <CardButton label={model["label"][0]} />
       </div>
     </div>
   );
