@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 
 const CardsSlider = ({discount}) => {
   const [loadedPlants, setLoadedPlants] = useState([])
+  const [productsWithDiscount, setProductsWithDiscount] = useState([])
 
   useEffect (() => {
     async function fetchProducts() {
@@ -17,8 +18,11 @@ const CardsSlider = ({discount}) => {
       }
 
       const listProducts = await response.json();
+      const productsWithDiscount = listProducts.filter(item => item.discountPercentage !== 0)
+
+      setProductsWithDiscount(productsWithDiscount)
       setLoadedPlants(listProducts);
-      
+
     }
     fetchProducts()
   }, []);
@@ -34,11 +38,18 @@ const CardsSlider = ({discount}) => {
     grabCursor={true}
     scrollbar={true}
     >
-      {loadedPlants.map((item) => (
+      {!discount 
+      ? loadedPlants.map((item) => (
         <SwiperSlide key={item.id}>
           <PlantCard model={item} discount={discount}/>
         </SwiperSlide>
-      ))}
+      ))
+      : productsWithDiscount.map((item) => (
+        <SwiperSlide key={item.id}>
+          <PlantCard model={item} discount={discount}/>
+        </SwiperSlide>
+      ))
+      }
     </Swiper>
     }
     {!loadedPlants.length && <p>VAZIO</p>}

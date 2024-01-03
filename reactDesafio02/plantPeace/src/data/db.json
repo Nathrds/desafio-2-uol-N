@@ -59,6 +59,21 @@
       "features": "Species: Kalanchoe blossfeldiana - also known as flaming Katy - is a plant known for its brilliant flower colours. Blooming Season: Kalanchoe tomentosa is known as the panda plant and is grown for its attractive soft, velvety grey leaves. Shipping: Kalanchoe blossfeldiana are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
       "description": "These come in shades of red, pink, yellow, orange and cream and can last for many months. It makes a lovely contrast to other succulent plants.",
       "imgUrl": "assets/modernPicture4.png"
+    }, 
+    {
+      "id": 5,
+      "name": "Golden Barrel Cactus",
+      "subtitle": "Echinocactus grusonii",
+      "label": [
+        "indoor",
+        "cactus"
+      ],
+      "price": 39.99,
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Echinocactus grusonii. Mature Size: Typically reaches 1 to 3 feet (30-90 cm) in height. Blooming Season: Rarely blooms indoors. Pot Size: Prefers well-draining soil and a smaller pot for optimal growth. Shipping: Our Golden Barrel Cacti are carefully packaged and shipped with care to ensure they arrive in excellent condition.",
+      "description": "The Golden Barrel Cactus, scientifically known as Echinocactus grusonii, is a striking cactus native to Mexico. Known for its spherical shape and distinctive golden spines, it adds a touch of desert charm to any indoor space. This low-maintenance cactus thrives in bright sunlight and requires minimal watering. With its unique appearance, the Golden Barrel Cactus is a popular choice among cactus enthusiasts.",
+      "imgUrl": "assets/modernPicture1.png"
     }
   ],
   "aboutUs": [
