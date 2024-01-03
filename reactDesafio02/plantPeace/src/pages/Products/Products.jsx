@@ -21,11 +21,14 @@ const Products = () => {
   }, [])
 
   return (
-    <ul className={styles.allProducts}>
-      {loadedProducts.map((plants) => (
-        <Product key={plants.id} plants={plants} />
-      ))}
-    </ul>
+    <div className={styles.allcontainer}>
+      <h1 className={styles.allcontainerH1}>Choose the plant that interests you and click on button to learn more about it</h1>
+      <ul className={styles.allProducts}>
+        {loadedProducts.map((plants) => (
+          <Product key={plants.id} plants={plants} />
+          ))}
+      </ul>
+    </div>
   )
 }
 
