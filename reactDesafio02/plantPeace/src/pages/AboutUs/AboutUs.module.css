@@ -17,9 +17,55 @@
 
 .cotainerAboutUs img {
     max-width: 30%;
+    border-radius: 6px;
 }
 
 .containerInfo {
     max-width: 100%;
     height: 15em;
+}
+
+.containerInfo h2 {
+    margin-left: 1%;
+    color: var(--color-primary-avacado);
+    font-weight: bold;
+}
+
+.containerInfo p {
+    color: var(--color-primary-lunar-green);
+    font-weight: 400;
+}
+
+.containerInfo span {
+    color: var(--color-primary-accent);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .cotainerAboutUs {
+        max-width: 320px;
+        max-height: 250px;
+    }
+
+    .cotainerAboutUs img {
+        max-width: 57%;
+        max-height: 80%;
+    }
+
+    .containerInfo {
+        max-width: 320px;
+    } 
+
+    .containerInfo h2 {
+        font-size: 100%;
+    }
+    
+    .containerInfo p {
+        font-size: 80%;
+    }
+    
+    .containerInfo span {
+        font-size: 86%;
+    }
 }

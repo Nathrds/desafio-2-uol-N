@@ -45,11 +45,11 @@
 
     .navHeader ul {
         font-size: 96%;
-        /* display: none; */
+        display: none;
     }
     
      .navLinks {
-        display: none;
+        /* display: none; */
         flex-direction: column;
         position: absolute;
         justify-content: center;

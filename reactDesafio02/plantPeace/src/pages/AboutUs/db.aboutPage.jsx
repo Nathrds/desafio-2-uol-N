@@ -9,8 +9,8 @@ const AboutUs = ({aboutUs}) => {
       <div className={styles.containerInfo}>
         <h2>{aboutUs.name}</h2>
         <p>{aboutUs.city}</p>
-        <p>{aboutUs.age}</p>
-        <p>{aboutUs.aboutMe}</p>
+        <p><span>Age: </span>{aboutUs.age}</p>
+        <p><span>About Me: </span>{aboutUs.aboutMe}</p>
       </div>
     </div>
   )
@@ -19,7 +19,7 @@ const AboutUs = ({aboutUs}) => {
 AboutUs.propTypes = {
   aboutUs: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    age: PropTypes.number.isRequired,
+    age: PropTypes.string.isRequired,
     city: PropTypes.string.isRequired,
     aboutMe: PropTypes.string.isRequired,
     imgMe: PropTypes.string.isRequired,
