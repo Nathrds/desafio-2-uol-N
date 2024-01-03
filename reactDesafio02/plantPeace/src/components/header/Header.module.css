@@ -38,17 +38,26 @@
     cursor: pointer;
 }
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
+    .navHeader {
+        padding: 2% 5%;
+    }
+
+    .navHeader ul {
+        font-size: 96%;
+    }
+}
+
+@media screen and (max-width: 540px) {
     .menuIcon {
         display: block;
     }
 
     .navHeader ul {
-        font-size: 96%;
         display: none;
     }
-    
-     .navLinks {
+
+    .navLinks {
         /* display: none; */
         flex-direction: column;
         position: absolute;
