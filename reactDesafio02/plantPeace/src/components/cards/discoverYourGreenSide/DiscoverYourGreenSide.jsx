@@ -7,7 +7,15 @@ import LeftImage from "../../../assets/img/imgDiscovery/left plant p.png";
 
 import SquareButton from "../../buttons/squareButton/SquareButton"
 
+
+
 const DiscoverYourGreenSide = () => {
+    const scrollToLearn = () => {
+        const section = document.getElementById('scrollLearn');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
   return (
     <div className={styles.container}>
         <div className={styles.containerContent}>
@@ -23,9 +31,7 @@ const DiscoverYourGreenSide = () => {
                 </a>    
             </section>
             <section className={styles.learn}>
-                <a href="#scrollLearn">
-                    <p className={styles.p2}>Learn Gardening &rarr;</p>
-                </a>
+                <p className={styles.p2} onClick={scrollToLearn}>Learn Gardening &rarr;</p>
             </section>
             <div className={styles.img2}>
                 <img className={styles.image2} src={LeftImage} alt="Left plant" />
@@ -36,7 +42,6 @@ const DiscoverYourGreenSide = () => {
                 <img className={styles.image1} src={RightImage} alt="Right plant" />
         </div>
  </div>
-  )
-}
-
+  );
+};
 export default DiscoverYourGreenSide;
