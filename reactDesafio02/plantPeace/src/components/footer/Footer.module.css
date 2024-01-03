@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    max-width: 100%;
     background-image: url(../../assets/img/footer-img.png);
     background-color: var(--color-primary-lunar-green);
     background-size: cover;
@@ -7,6 +7,7 @@
 }
 
 .containerInformation {
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,25 +18,29 @@
 .articleFooter { color: #fff; }
 
 .articleFooter h1 {
+    /* border: 2px solid red; */
     font-family: var(--titulo-h1);
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 16px;
 }
 
-.articleFooter p {margin: 16px 0;}
+.articleFooter p { 
+    line-height: 24.72px;
+    margin: 16px 0; 
+}
 
-p, .navLink {
+.navLink {
     font-family: var(--titulo-p);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24.72px;
-    
+    line-height: 24.72px;  
 }
 
 .navFooter { display: flex; }
 
 .sectionFooter {
+    /* border: 2px solid lightcoral; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -45,6 +50,7 @@ p, .navLink {
 }
 
 .sectionFooter h2 {
+    /* border: 2px solid lightskyblue; */
     font-family: var(--titulo-h2);
     font-size: 24px;
     font-weight: 700;
@@ -52,17 +58,20 @@ p, .navLink {
 }
 
 .navLink {
+    /* border: 2px solid darkgray; */
     text-decoration: none;
     color: #fff;
     margin-bottom: 16px;
 }
 
 .navLink:hover {
+    /* background: aqua; */
     cursor: pointer;
     font-weight: 200;
 }
 
 .footerWithImg {
+    /* background: brown; */
     border-top: 1px solid #DDDEA0;
     max-width: 90%;
     color: #fff;
@@ -75,6 +84,75 @@ p, .navLink {
 }
 
 .footerWithImg p {
+    /* background: rebeccapurple; */
     max-width: 221px;
     text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    .containerInformation {
+        padding: 5%;
+    }
+
+    .containerInformation {
+        max-width: 100%;
+        /* padding: 90px 100px; */
+    }
+
+    .articleFooter {
+        max-width: 300px;
+    }
+
+    .articleFooter h1 {
+        font-size: 280%;
+        margin-bottom: 10%;
+    }
+    
+    .articleFooter p, .navLink {
+        font-size: 80%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navFooter {
+        justify-content: center;
+    }
+
+    .sectionFooter {
+        max-width: 100%;
+        padding: 0;
+        margin: 2%;
+    }
+
+    .sectionFooter h2 {
+        font-size: 130%;
+        max-height: 100px;
+        padding-bottom: 2%;
+    }
+
+    .navLink {
+        margin-bottom: 0;
+    }
+
+    .footerWithImg p {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .containerInformation {
+        padding: 3%;
+    }
+
+    .articleFooter h1 {
+        font-size: 136%;
+    }
+
+    .articleFooter p, .navLink, .footerWithImg p {
+        font-size: 50%;
+    }
+
+    .sectionFooter h2 {
+        font-size: 90%;
+    }
 }
