@@ -22,14 +22,18 @@
     padding: 16px;
 }
 
+.navHeader li:hover {
+    cursor: pointer;
+    color: var(--color-primary-avacado);
+}
+
 .linkPages {
     text-decoration: none;
     color: var(--color-primary-lunar-green);
 }
 
-.linkPages:hover {
+.linkPages:hover, .linkPages:focus {
     color: var(--color-primary-avacado);
-    cursor: pointer;
 }
 
 .menuIcon {
