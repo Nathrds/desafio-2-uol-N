@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 100px;
+    max-width: 100%;
 }
 
 .navHeader ul {
@@ -29,4 +30,37 @@
 .linkPages:hover {
     color: var(--color-primary-avacado);
     cursor: pointer;
+}
+
+.menuIcon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+@media screen and (max-width: 768px) {
+    .menuIcon {
+        display: block;
+    }
+
+    .navHeader ul {
+        font-size: 96%;
+        /* display: none; */
+    }
+    
+     .navLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        top: 80px;
+        left: 0;
+        background-color: var(--tab-grey-color);
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .navLinks .showMenu {
+       display: flex;
+    }
 }
