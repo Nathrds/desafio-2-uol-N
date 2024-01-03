@@ -43,12 +43,13 @@ form {
 
 .imageStyle {
   filter: grayscale(100%);
+  max-width: 140%;
+  height: 100%;
 }
 
 .imageContainer {
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
+  justify-content: flex-end;  
 }
 
 .containerSection {
