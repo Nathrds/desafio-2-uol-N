@@ -17,6 +17,14 @@ const Register = () => {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
+
+    const specialChar = /^[A-Za-z0-9 ]*$/;
+
+    if (!specialChar.test(value)) {
+      alert("Special characters are not allowed!");
+      return; 
+  }
+
     if (["plantName", "plantSubtitle", "plantType"].includes(name) && /\d/.test(value)) {
       alert(`This field cannot contain numbers!`);
       return; 
