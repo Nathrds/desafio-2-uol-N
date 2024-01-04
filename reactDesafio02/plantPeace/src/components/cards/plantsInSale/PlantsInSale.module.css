@@ -6,6 +6,7 @@
     background-color: var(--tab-grey-color);
     padding-top: 5%;
     padding-bottom: 5%;
+    overflow: hidden;
 }
 
 .sectionPlants {
