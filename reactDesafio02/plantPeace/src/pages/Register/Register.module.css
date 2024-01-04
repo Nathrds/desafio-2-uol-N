@@ -224,6 +224,7 @@ input[type=radio]:checked {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    z-index: 0;
   }
   
   .imageStyle {
@@ -408,6 +409,7 @@ input[type=radio]:checked {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    z-index: 0;
   }
   
   .imageStyle {
@@ -592,6 +594,7 @@ input[type=radio]:checked {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    z-index: 0;
   }
   
   .imageStyle {
@@ -777,6 +780,7 @@ input[type=radio]:checked {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    z-index: 0;
   }
   
   .imageStyle {
@@ -962,6 +966,7 @@ input[type=radio]:checked {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    z-index: 0;
   }
   
   .imageStyle {
@@ -1147,6 +1152,7 @@ input[type=radio]:checked {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    z-index: 0;
   }
   
   .imageStyle {
@@ -1332,6 +1338,7 @@ input[type=radio]:checked {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    z-index: 0;
   }
   
   .imageStyle {
