@@ -38,7 +38,6 @@
 .title{
     font-size: 64px;
     margin-bottom: 16px;
-    border: 1px solid red;
 }
 
 .label{
@@ -88,8 +87,6 @@ ul li{
 .sub{
     font-size: 24px;
     color: #AFB2AA;
-    margin-left: -3px;
-    border: 1px solid green;
 }
 
 .Title{
@@ -100,7 +97,6 @@ ul li{
 .price{
     color: black;
     margin-bottom: 24px;
-    border: 1px solid blue;
 }
 
 .button{
@@ -119,13 +115,15 @@ ul li{
     font-family: var(--titulo-p);
     font-size: 16px;
     padding-top: 24px;
+    line-height: 24.72px;
 }
 
 .description{
     font-size: 24px;
+    line-height: 24.72px;
 }
 
 .descriptionContent{
     font-size: 16px;
-    margin-left: -3px;
+    margin-top: 24px;
 }
