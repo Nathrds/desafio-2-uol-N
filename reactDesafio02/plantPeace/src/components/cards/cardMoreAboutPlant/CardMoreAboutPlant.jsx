@@ -1,53 +1,74 @@
-// import React from 'react'
+import React, { useEffect, useState } from 'react';
+import styles from './MoreAbout.module.css';
+import { NavLink, useParams } from 'react-router-dom';
 
-import styles from './MoreAbout.module.css'
-
-import ImagePlant from "./AboutPlant.png"
-
-import SquareButton from "../../buttons/squareButton/SquareButton"
-import CardButton from '../../buttons/cardButton/CardButton'
-import { NavLink } from "react-router-dom"
+import SquareButton from '../../buttons/squareButton/SquareButton';
+import CardButton from '../../buttons/cardButton/CardButton';
 
 const CardMoreAboutPlant = () => {
-  const textoComAspas = "Ladyfinger cactus ('Echinocereus pentalophus') is also know as Alice, Devil's Fingers, and Dog Tail, it needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak, Aphids and mealybugs are also a danger. Avoiding wet soil can help with succes with a ladyfinger cactus.";
+  const { id } = useParams();
+  const [plantData, setPlantData] = useState(null);
+
+  useEffect(() => {
+
+    const fetchPlantDetails = async () => {
+      try {
+        const response = await fetch(`http://localhost:3000/plants/${id}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch plant details');
+        }
+        const data = await response.json();
+        setPlantData(data);
+      } catch (error) {
+        console.error('Error fetching plant details:', error.message);
+      }
+    };
+
+    fetchPlantDetails();
+  }, [id]);
+
+  if (!plantData) {
+    return <div>Loading...</div>; 
+  }
+
   return (
     <div className={styles.container2}>
       <div className={styles.image}>
-        <img className={styles.ImagePlant} src={ImagePlant} alt="Cactus Image"/>
+        <img className={styles.ImagePlant} src={`/src/${plantData.imgUrl}`} alt={plantData.name} />
       </div>
       <div className={styles.containerContent2}>
-        <h1 className={styles.title}>Echinocereus Cactus</h1>
-        <h2 className={styles.sub}>A Majestic Addition to You Plant Collection</h2>
+        <h1 className={styles.title}>{plantData.name}</h1>
+        <h2>{plantData.subtitle}</h2>
         <section className={styles.label}>
-          <CardButton label={<span>indoor</span>} />
-          <CardButton  label={<span>cactus</span>} />
+          {plantData.label.map((label, index) => (
+            <CardButton key={index} label={label} />
+          ))}
         </section>
-        <h2 className={styles.price}>$139.99</h2>
+        <h2 className={styles.price}>${plantData.price}</h2>
         <section className={styles.button}>
-          <NavLink to="https://www.bhg.com/gardening/plant-dictionary/" target="_blank" rel="external pag">
-            <SquareButton title={"Check out"} />
-          </NavLink>    
+          <a href={plantData.link} target="_blank" rel="noopener noreferrer">
+            <SquareButton title="Check out" />
+          </a>
         </section>
         <section className={styles.features}>
           <div className={styles.featuresTitle}>
             <h1 className={styles.Title}>Features</h1>
             <ul className={styles.topics}>
-                <li><span className={styles.bull}>&bull;</span>Species Echinocereus spp.</li>
-                <li><span className={styles.bull}>&bull;</span>Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height.</li>
-                <li><span className={styles.bull}>&bull;</span>Blooming Season: Typically spring or summer, with flowers lasting several days to weeks.</li>
-                <li><span className={styles.bull}>&bull;</span>Pot Size: Avaliable in various pot sizes to suit your preference and needs</li>
+              {plantData.features.split('\n').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
             </ul>
           </div>
         </section>
         <section className={styles.description}>
           <div className={styles.descriptionTitle}>
-            <h1 className={styles.Title}>Description</h1>
-            <p className={styles.descriptionContent}>{textoComAspas}</p>
+            <h1>Description</h1>
+            <p className={styles.descriptionContent}>{plantData.description}</p>
           </div>
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CardMoreAboutPlant
+export default CardMoreAboutPlant;
