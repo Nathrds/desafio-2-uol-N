@@ -4,6 +4,7 @@ import AboutPage from "./db.aboutPage";
 import { useState, useEffect } from "react";
 import Nathalia from "../../components/Nathalia/Nathalia";
 import Matheus from "../../components/Matheus/Matheus";
+import Vinicius from "../../components/Vinicius/Vinicius";
 
 const AboutUs = () => {
   const [loadedAboutUS, setLoadedAboutUs] = useState([]);
@@ -32,6 +33,7 @@ const AboutUs = () => {
       {loadedAboutUS[1] && <Matheus model={loadedAboutUS[1]} />}
       {loadedAboutUS[0] && <Nathalia model={loadedAboutUS[0]} />}
       {loadedAboutUS[2] && <Thiago model={loadedAboutUS[2]} />}
+      {loadedAboutUS[3] && <Vinicius model={loadedAboutUS[3]} />}
     </div>
   );
 };
