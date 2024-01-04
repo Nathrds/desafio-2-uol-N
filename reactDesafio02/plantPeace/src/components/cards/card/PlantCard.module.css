@@ -1,11 +1,12 @@
 .container {
     max-height: 800px;
-    width: 83%;
+    width: 100%;
     background-color: var(--background-color);
     flex-direction: column;
     align-items: flex-start;
     background: var(--Athena-Grey, #F8F9FB);
     box-shadow: 0px 6.476px 6px 0px rgba(41, 41, 41, 0.08);
+    margin: 5%;
     .content {
         box-sizing: border-box;
         height: 35%;
@@ -24,6 +25,7 @@
 .image {
     max-width: 100%;
     max-height: 100%;
+    width: 100%;
 }
 
 .name {
