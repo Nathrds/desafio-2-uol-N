@@ -42,22 +42,37 @@ ul{
 h2{
     font-size: 24px;
     color: #AFB2AA;
-    margin-left: -4px;
+    margin-left: -3px;
 }
 
 .price{
     color: black;
 }
 
+.button{
+    display: flex;
+    padding-top: 24px;
+    z-index: 1;
+    padding-bottom: 24px;
+    padding-left: 0%;
+}
+
 .features{
     font-size: 24px;
+    padding-bottom: 24px;
 }
 
 .topics{
     font-family: var(--titulo-p);
     font-size: 16px;
+    padding-top: 24px;
 }
 
 .description{
     font-size: 24px;
+}
+
+.descriptionContent{
+    font-size: 16px;
+    margin-left: -3px;
 }

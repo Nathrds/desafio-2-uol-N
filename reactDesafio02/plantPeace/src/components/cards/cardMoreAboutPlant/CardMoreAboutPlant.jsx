@@ -4,6 +4,8 @@ import styles from './MoreAbout.module.css'
 
 import ImagePlant from "./AboutPlant.png"
 
+import SquareButton from "../../buttons/squareButton/SquareButton"
+
 const CardMoreAboutPlant = () => {
   const textoComAspas = "Ladyfinger cactus ('Echinocereus pentalophus') is also know as Alice, Devil's Fingers, and Dog Tail, it needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak, Aphids and mealybugs are also a danger. Avoiding wet soil can help with succes with a ladyfinger cactus.";
   return (
@@ -18,6 +20,9 @@ const CardMoreAboutPlant = () => {
 
         </section>
         <h2 className={styles.price}>$139.99</h2>
+        <section className={styles.button}>
+          <SquareButton title={"Check out"} />    
+        </section>
         <section className={styles.features}>
           <div className={styles.featuresTitle}>
             <h1>Features</h1>
@@ -32,7 +37,7 @@ const CardMoreAboutPlant = () => {
         <section className={styles.description}>
           <div className={styles.descriptionTitle}>
             <h1>Description</h1>
-            <p>{textoComAspas}</p>
+            <p className={styles.descriptionContent}>{textoComAspas}</p>
           </div>
         </section>
       </div>
