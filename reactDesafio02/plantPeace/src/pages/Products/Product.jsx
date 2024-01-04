@@ -8,10 +8,10 @@ import SquareButton from '../../components/buttons/squareButton/SquareButton';
 export default function Product ({ plants }) {
     return (
         <li className={styles.undProducts}>
-            <img src={`src/${plants.imgUrl}`} alt={plants.name} />
-            <h1>{plants.name}</h1>
-            <h2>{plants.subtitle}</h2>
-            <p>R$ {plants.price}</p>
+            <img className={styles.undProducts_Img} src={`src/${plants.imgUrl}`} alt={plants.name} />
+            <h1 className={styles.undProducts_H1}>{plants.name}</h1>
+            <h2 className={styles.undProducts_H2}>{plants.subtitle}</h2>
+            <p className={styles.undProducts_P}>R$ {plants.price}</p>
             <div className={styles.buttonProducts}>
             <NavLink state={plants} to="/moreabout">
                 <SquareButton title={"More"} />

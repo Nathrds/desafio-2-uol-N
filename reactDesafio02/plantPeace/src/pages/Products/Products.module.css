@@ -23,7 +23,7 @@
     max-width: 100%;
 }
 
-.allProducts li {
+.undProducts {
     max-width: 480px;
     min-height: 810px;
     padding: 1%;
@@ -39,26 +39,24 @@
     margin: 36px;
 }
 
-.undProducts img {
+.undProducts_Img {
     border-radius: 20px;
     margin: 4%;
     max-width: 100%;
 }
 
-/*NÃO MEXER NESSE DE BAIXO ATÉ O ULTIMO DIA!!*/
-.undProducts h1, h2, p {
+.undProducts_H1, .undProducts_H2, .undProducts_P {
     padding: 5px 5px;
     margin: 10px 8px;
 }
-/*NÃO MEXER NO DE CIMA*/
 
-.undProducts h1 {
+.undProducts_H1 {
     color: #354733;
     font-size: 250%;
     text-align: center;
 }
 
-.undProducts h2 {
+.undProducts_H2 {
     color: #8A9B6E;
     text-align: center;
     font-size: 150%;
@@ -66,7 +64,7 @@
     padding: 2%;
 }
 
-.undProducts p {
+.undProducts_P {
     background-color: #FCFCFC;
     border: 1.5px solid #DDDEA0;
     color: #354733;
@@ -94,7 +92,7 @@
         margin-bottom: 1%;
     }
 
-    .allProducts li {
+    .undProducts {
         max-width: 320px;
         min-height: 626px;
     }
@@ -103,19 +101,19 @@
         margin: 2%;
     }
 
-    .undProducts img {
+    .undProducts_Img {
         max-width: 84%;
     }
 
-    .undProducts h1 {
+    .undProducts_H1 {
         font-size: 180%;
     }
 
-    .undProducts h2 {
+    .undProducts_H2 {
         font-size: 100%;
     }
 
-    .undProducts p {
+    .undProducts_P {
         font-size: 78%;
     }
 }
@@ -127,16 +125,16 @@
         margin-bottom: 3%;
     }
 
-    .allProducts li {
+    .undProducts {
         max-width: 280px;
         min-height: 500px;
     }
 
-    .undProducts h1 {
+    .undProducts_H1 {
         font-size: 158%;
     }
 
-    .undProducts h2 {
+    .undProducts_H2 {
         font-size: 87%;
     }
 }

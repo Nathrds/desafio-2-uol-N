@@ -1,4 +1,4 @@
-.containerAboutPage {
+.containerAboutPage {    
     background-color: var(--tab-grey-color);
     display: flex;
     flex-direction: row;
