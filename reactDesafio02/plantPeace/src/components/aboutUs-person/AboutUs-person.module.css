@@ -2,9 +2,17 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: var(--tab-grey-color);
+    /* background-color: var(--background-color); */
     justify-content: center;
     align-items: center;
+}
+
+.containerMatheus, .containerThiago {
+    background-color: var(--background-color);
+}
+
+.containerNathalia, .containerVinicius {
+    background-color: var(--tab-grey-color);
 }
 
 .sectionImg {

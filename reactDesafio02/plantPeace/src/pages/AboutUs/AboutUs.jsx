@@ -1,10 +1,13 @@
 import styles from "./AboutUs.module.css";
-import Thiago from "../../components/Thiago/Thiago";
+
 import AboutPage from "./db.aboutPage";
+
 import { useState, useEffect } from "react";
-import Nathalia from "../../components/Nathalia/Nathalia";
-import Matheus from "../../components/Matheus/Matheus";
-import Vinicius from "../../components/Vinicius/Vinicius";
+
+import Matheus from "../../components/aboutUs-person/Matheus/Matheus";
+import Nathalia from "../../components/aboutUs-person/Nathalia/Nathalia";
+import Thiago from "../../components/aboutUs-person/Thiago/Thiago";
+import Vinicius from "../../components/aboutUs-person/Vinicius/Vinicius";
 
 const AboutUs = () => {
   const [loadedAboutUS, setLoadedAboutUs] = useState([]);
@@ -30,10 +33,10 @@ const AboutUs = () => {
           <AboutPage key={aboutUs.id} aboutUs={aboutUs} />
         ))}
       </ul>
-      {loadedAboutUS[0] && <Matheus model={loadedAboutUS[0]} />}
-      {loadedAboutUS[1] && <Nathalia model={loadedAboutUS[1]} />}
-      {loadedAboutUS[2] && <Thiago model={loadedAboutUS[2]} />}
-      {loadedAboutUS[3] && <Vinicius model={loadedAboutUS[3]} />}
+        {loadedAboutUS[0] && <Matheus model={loadedAboutUS[0]} />}
+        {loadedAboutUS[1] && <Nathalia model={loadedAboutUS[1]} />}
+        {loadedAboutUS[2] && <Thiago model={loadedAboutUS[2]} />}
+        {loadedAboutUS[3] && <Vinicius model={loadedAboutUS[3]} />}
     </div>
   );
 };
