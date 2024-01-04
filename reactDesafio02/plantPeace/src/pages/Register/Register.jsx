@@ -1,8 +1,6 @@
 import styles from "./Register.module.css";
 import { useState } from "react";
-//import SquareButton from "../../components/buttons/squareButton/SquareButton.jsx";
 import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
-//import { NavLink } from "react-router-dom";
 
 const Register = () => {
   
@@ -19,10 +17,22 @@ const Register = () => {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setPlantData({
-      ...plantData,
+    if (["plantName", "plantSubtitle", "plantType"].includes(name) && /\d/.test(value)) {
+      alert(`This field cannot contain numbers!`);
+      return; 
+    }
+
+    if (["plantPrice", "plantDiscount"].includes(name)) {
+      if (value && isNaN(value)) {
+          alert(`This field cannot contain letters!`);
+          return; 
+      }
+    }
+
+    setPlantData(prevData => ({
+      ...prevData,
       [name]: value
-    });
+    }));
   };
 
   const handleSubmit = async (event) => {
@@ -43,6 +53,7 @@ const Register = () => {
     }
   };
 
+
   return (
     <div className={styles.defaultContainer}>
       <form onSubmit={handleSubmit}>
@@ -59,6 +70,7 @@ const Register = () => {
                 type="text"
                 name="plantName"
                 placeholder="Echinocereus Cactus"
+                required
                 value={plantData.plantName}
                 onChange={handleInputChange}
               />
@@ -69,6 +81,7 @@ const Register = () => {
                 type="text"
                 name="plantSubtitle"
                 placeholder="A majestic addition to your plant collection"
+                required
                 value={plantData.plantSubtitle}
                 onChange={handleInputChange}
               />
@@ -79,6 +92,7 @@ const Register = () => {
                 type="text"
                 name="plantType"
                 placeholder="Cactus"
+                required
                 value={plantData.plantType}
                 onChange={handleInputChange}
               />
@@ -91,6 +105,7 @@ const Register = () => {
                     type="text"
                     name="plantPrice"
                     placeholder="$139.99"
+                    required
                     value={plantData.plantPrice}
                     onChange={handleInputChange}
                   />
@@ -110,7 +125,7 @@ const Register = () => {
               </section>
               
               <span className={styles.spanStyle}>Label:</span>
-              <section className={styles.section}>
+              <section className={styles.section} >
                 <label className={styles.radioStyle}>
                   <input className={styles.radioButton}
                     type="radio"
@@ -153,6 +168,7 @@ const Register = () => {
                   className={styles.largeTextarea}
                   name="description"
                   placeholder="Ladyfinger cactus..."
+                  required
                   value={plantData.description}
                   onChange={handleInputChange}
                 />
