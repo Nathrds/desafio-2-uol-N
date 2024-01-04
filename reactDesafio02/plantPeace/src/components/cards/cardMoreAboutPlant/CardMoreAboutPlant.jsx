@@ -5,6 +5,8 @@ import styles from './MoreAbout.module.css'
 import ImagePlant from "./AboutPlant.png"
 
 import SquareButton from "../../buttons/squareButton/SquareButton"
+import CardButton from '../../buttons/cardButton/CardButton'
+import { NavLink } from "react-router-dom"
 
 const CardMoreAboutPlant = () => {
   const textoComAspas = "Ladyfinger cactus ('Echinocereus pentalophus') is also know as Alice, Devil's Fingers, and Dog Tail, it needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak, Aphids and mealybugs are also a danger. Avoiding wet soil can help with succes with a ladyfinger cactus.";
@@ -17,11 +19,14 @@ const CardMoreAboutPlant = () => {
         <h1 className={styles.title}>Echinocereus Cactus</h1>
         <h2>A Majestic Addition to You Plant Collection</h2>
         <section className={styles.label}>
-
+          <CardButton label={<span>indoor</span>} />
+          <CardButton  label={<span>cactus</span>} />
         </section>
         <h2 className={styles.price}>$139.99</h2>
         <section className={styles.button}>
-          <SquareButton title={"Check out"} />    
+          <NavLink to="https://www.bhg.com/gardening/plant-dictionary/" target="_blank" rel="external pag">
+            <SquareButton title={"Check out"} />
+          </NavLink>    
         </section>
         <section className={styles.features}>
           <div className={styles.featuresTitle}>
