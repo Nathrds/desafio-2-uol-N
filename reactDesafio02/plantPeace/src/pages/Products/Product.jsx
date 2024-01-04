@@ -13,7 +13,7 @@ export default function Product ({ plants }) {
             <h2 className={styles.undProducts_H2}>{plants.subtitle}</h2>
             <p className={styles.undProducts_P}>R$ {plants.price}</p>
             <div className={styles.buttonProducts}>
-            <NavLink state={plants} to="/moreabout">
+            <NavLink to={`/moreabout/${plants.id}`}>
                 <SquareButton title={"More"} />
             </NavLink>
             </div>
@@ -22,10 +22,11 @@ export default function Product ({ plants }) {
 }
 
 Product.propTypes = {
-    plants: PropTypes.shape({
-      imgUrl: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      subtitle: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
+        plants: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        imgUrl: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        subtitle: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
     }).isRequired,
   };

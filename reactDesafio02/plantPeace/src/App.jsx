@@ -27,7 +27,7 @@ function App() {
         </div>
         <div>
           <Routes>
-            <Route path='/moreabout' element={<CardMoreAboutPlant />}/>
+          <Route path='/moreabout/:id' element={<CardMoreAboutPlant />} />
           </Routes>
         </div>
         <Footer />

@@ -8,6 +8,7 @@
     max-width: 100%;
     background-color: var(--tab-grey-color);
     filter: grayscale(100%);
+    overflow: hidden;
 }
 
 .img1{
