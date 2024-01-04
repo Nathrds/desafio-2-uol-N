@@ -76,6 +76,7 @@
 
 .buttonProducts {
     border: 2px solid #354733;
+    outline: none;
     border-radius: 5px;
     margin: 5%;
 }
