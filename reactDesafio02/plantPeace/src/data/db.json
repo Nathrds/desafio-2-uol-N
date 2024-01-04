@@ -94,19 +94,21 @@
   "aboutUs": [
     {
       "id": 1,
-      "name": "Nathália Rodrigues",
-      "city": "Brasília-DF",
-      "age": "27",
-      "aboutMe": "Well. Good question ...",
-      "imgMe": "assets/imgAboutMe/imgAnxiety.PNG"
-    },
-    {
-      "id": 2,
       "name": "Matheus Henrique",
       "city": "Correntes-PE",
       "age": "21",
       "aboutMe": "I know that I know nothing.",
-      "imgMe": "assets/imgAboutMe/imgBoredom.PNG"
+      "imgMe": "assets/imgAboutMe/imgBoredom.PNG",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "name": "Nathália Rodrigues",
+      "city": "Brasília-DF",
+      "age": "27",
+      "aboutMe": "Well. Good question ...",
+      "imgMe": "assets/imgAboutMe/imgAnxiety.PNG",
+      "description": ""
     },
     {
       "id": 3,
@@ -114,7 +116,8 @@
       "city": "Belo Horizonte-MG / Garanhuns-PE",
       "age": "20",
       "aboutMe": "I don't know yet ;-;",
-      "imgMe": "assets/imgAboutMe/imgFear.PNG"
+      "imgMe": "assets/imgAboutMe/imgFear.PNG",
+      "description": "Meu nome é Thiago Almeida de Paiva, tenho 20 anos e faço Ciência da Computação na Universidade Federal do Agreste de Pernambuco (UFAPE). Nasci em Veranópolis - RS e cresci em Belo Horizonte - MG, aos 18 anos me mudei para Garanhuns - PE para iniciar a faculdade, porém meus pais continuam morando em Belo Horizonte. Moro com minha irmã e meus dois cachorros, Romeu e Jullieta, e talvez agora mais quatro cachorros pois a Jullie teve filhotes."
     },
     {
       "id": 4,
@@ -122,7 +125,8 @@
       "city": "Garanhuns-PE",
       "age": "21",
       "aboutMe": "It's none of your business!",
-      "imgMe": "assets/imgAboutMe/imgAnger.PNG"
+      "imgMe": "assets/imgAboutMe/imgAnger.PNG",
+      "description": ""
     }
   ]
 }
