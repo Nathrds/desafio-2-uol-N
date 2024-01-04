@@ -13,7 +13,7 @@ export default function Product ({ plants }) {
             <h2>{plants.subtitle}</h2>
             <p>R$ {plants.price}</p>
             <div className={styles.buttonProducts}>
-            <NavLink to="/moreabout">
+            <NavLink state={plants} to="/moreabout">
                 <SquareButton title={"More"} />
             </NavLink>
             </div>
