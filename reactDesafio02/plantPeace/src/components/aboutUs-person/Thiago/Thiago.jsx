@@ -4,19 +4,19 @@ import PropTypes from "prop-types";
 
 const Thiago = ({model}) => {
     return (
-        <sectin className={styles.containerThiago}>
+        <section className={styles.containerThiago}>
             <div className={styles.container}>
                 <section className={styles.sectionImg}>
-                    <img src={`src/${model.imgMe}`} alt={model.name} />
+                    <img className={styles.sectionImg_IMG} src={`src/${model.imgMe}`} alt={model.name} />
                 </section>
                 <section className={styles.sectionContent}>
                     <div>
-                        <h1>{model.name}</h1>
-                        <p>{model.description}</p>
+                        <h1 className={styles.sectionContent_H1}>{model.name}</h1>
+                        <p className={styles.sectionContent_P}>{model.description}</p>
                     </div>
                 </section>
             </div>
-        </sectin>
+        </section>
     )
 }
 

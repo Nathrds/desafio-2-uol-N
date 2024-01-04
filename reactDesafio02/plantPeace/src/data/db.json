@@ -106,9 +106,9 @@
       "name": "Nathália Rodrigues",
       "city": "Brasília-DF",
       "age": "27",
-      "aboutMe": "Well. Good question ...",
+      "aboutMe": "Well.. Good question ...",
       "imgMe": "assets/imgAboutMe/imgAnxiety.PNG",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "description": "Hi! I'm Nathy, I'm 27 years old, and I'm studying Systems Analysis and Development at SENAC College - DF. I was born and live in Brasília, and I have a little dog named Bonnie. My hobbies include playing games, watching series or movies, and doing artistic makeup. My favorite holiday is Halloween, but I don't watch horror movies."
     },
     {
       "id": 3,
@@ -117,7 +117,7 @@
       "age": "20",
       "aboutMe": "I don't know yet ;-;",
       "imgMe": "assets/imgAboutMe/imgFear.PNG",
-      "description": "Meu nome é Thiago Almeida de Paiva, tenho 20 anos e faço Ciência da Computação na Universidade Federal do Agreste de Pernambuco (UFAPE). Nasci em Veranópolis - RS e cresci em Belo Horizonte - MG, aos 18 anos me mudei para Garanhuns - PE para iniciar a faculdade, porém meus pais continuam morando em Belo Horizonte. Moro com minha irmã e meus dois cachorros, Romeu e Jullieta, e talvez agora mais quatro cachorros pois a Jullie teve filhotes."
+      "description": "My name is Thiago Almeida de Paiva, I'm 20 years old, and I'm majoring in Computer Science at the Federal University of Agreste de Pernambuco (UFAPE). I was born in Veranópolis - RS and grew up in Belo Horizonte - MG. At the age of 18, I moved to Garanhuns - PE to start college, but my parents still live in Belo Horizonte. I live with my sister and my two dogs, Romeo and Juliet, and maybe now four more dogs because Juliet had puppies."
     },
     {
       "id": 4,
@@ -126,7 +126,7 @@
       "age": "21",
       "aboutMe": "It's none of your business!",
       "imgMe": "assets/imgAboutMe/imgAnger.PNG",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "description": "Hello, I'm Vinicius Leite Costa, a Computer Science student at the Federal University of Agreste de Pernambuco. I'm a gamer, a guitarist, totally hooked on music, and fascinated by the universe in general. I've been in love with technology since I was 8 years old when I first encountered Windows XP, and from that point on, my desire to learn more about technology has only grown stronger and stronger!"
     }
   ]
 }
