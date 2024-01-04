@@ -2,6 +2,8 @@ import styles from "./AboutUs.module.css";
 import Thiago from "../../components/Thiago/Thiago";
 import AboutPage from "./db.aboutPage";
 import { useState, useEffect } from "react";
+import Nathalia from "../../components/Nathalia/Nathalia";
+import Matheus from "../../components/Matheus/Matheus";
 
 const AboutUs = () => {
   const [loadedAboutUS, setLoadedAboutUs] = useState([]);
@@ -27,6 +29,8 @@ const AboutUs = () => {
           <AboutPage key={aboutUs.id} aboutUs={aboutUs} />
         ))}
       </ul>
+      {loadedAboutUS[1] && <Matheus model={loadedAboutUS[1]} />}
+      {loadedAboutUS[0] && <Nathalia model={loadedAboutUS[0]} />}
       {loadedAboutUS[2] && <Thiago model={loadedAboutUS[2]} />}
     </div>
   );
