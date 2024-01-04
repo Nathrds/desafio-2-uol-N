@@ -7,7 +7,6 @@
 }
 
 .containerInformation {
-    /* border: 2px solid blue; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,7 +16,7 @@
 
 .articleFooter { color: #fff; }
 
-.articleFooter h1 {
+.articleFooter_H1 {
     /* border: 2px solid red; */
     font-family: var(--titulo-h1);
     font-size: 64px;
@@ -25,7 +24,7 @@
     margin-bottom: 16px;
 }
 
-.articleFooter p { 
+.articleFooter_P { 
     line-height: 24.72px;
     margin: 16px 0; 
 }
@@ -49,7 +48,7 @@
     padding: 0 27px;
 }
 
-.sectionFooter h2 {
+.sectionFooter_H2 {
     /* border: 2px solid lightskyblue; */
     font-family: var(--titulo-h2);
     font-size: 24px;
@@ -84,7 +83,7 @@
     margin: 0 auto;
 }
 
-.footerWithImg p {
+.footerWithImg_P {
     /* background: rebeccapurple; */
     max-width: 221px;
     text-align: center;
@@ -103,12 +102,12 @@
         max-width: 300px;
     }
 
-    .articleFooter h1 {
+    .articleFooter_H1 {
         font-size: 280%;
         margin-bottom: 10%;
     }
     
-    .articleFooter p, .navLink {
+    .articleFooter_P, .navLink {
         font-size: 80%;
         padding: 0;
         margin: 0;
@@ -120,21 +119,22 @@
 
     .sectionFooter {
         max-width: 100%;
-        padding: 0;
-        margin: 2%;
+        padding: 2%;
+        margin: 7%;
     }
 
-    .sectionFooter h2 {
+    .sectionFooter_H2 {
         font-size: 130%;
         max-height: 100px;
-        padding-bottom: 2%;
+        padding-bottom: 20px;
     }
 
     .navLink {
         margin-bottom: 0;
+        margin: 5px 0;
     }
 
-    .footerWithImg p {
+    .footerWithImg_P {
         font-size: 70%;
     }
 }
@@ -144,15 +144,44 @@
         padding: 3%;
     }
 
-    .articleFooter h1 {
+    .articleFooter_H1 {
         font-size: 136%;
     }
 
-    .articleFooter p, .navLink, .footerWithImg p {
-        font-size: 50%;
+    .navLink {
+        margin: 0;
     }
 
-    .sectionFooter h2 {
+    .articleFooter_P, .navLink, .footerWithImg_P {
+        font-size: 70%;
+    }
+
+    .sectionFooter {
+        padding: 0;
+        margin: 2px 14px;
+    }
+
+    .sectionFooter_H2 {
         font-size: 90%;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .articleFooter {
+        margin: 25px 0;
+    }
+
+    .articleFooter_H1 {
+        font-size: 140%;
+    }
+
+    .articleFooter_P, .footerWithImg_P, .navLink {
+        font-size: 70%;
+    }
+
+    .containerInformation {
+        flex-direction: column;
+        align-items: center;
     }
 }

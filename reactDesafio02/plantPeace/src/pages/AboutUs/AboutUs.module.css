@@ -58,6 +58,9 @@
     .cotainerAboutUs {
         max-width: 320px;
         max-height: 250px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 0 5px;
     }
 
     .cotainerAboutUs_Img {
