@@ -47,6 +47,7 @@ form {
 
 .imageStyle {
   filter: grayscale(100%);
+  transition: 0.3s;
   height: 100%;
 }
 
@@ -154,9 +155,10 @@ input[type=radio]:checked {
 
   border-radius: 4px;
   color: #f1f1f1;
+
+  transition: 0.3s;
   background: var(--Primary-Lunar-green, #354733);
   border: var(--color-primary-avacado);
-
   color: var(--white, #FCFCFC);
 
   font-family: Inter;
@@ -177,6 +179,7 @@ input[type=radio]:checked {
   border-radius: 4px;
   color: #f1f1f1;
 
+  transition: 0.3s;
   background-color:  #31c36c;
   border:  #31c36c;
 
@@ -361,6 +364,7 @@ input[type=radio]:checked {
     border-radius: 4px;
     color: #f1f1f1;
   
+    transition: 0.3s;
     background-color:  #31c36c;
     border:  #31c36c;
     
@@ -546,9 +550,8 @@ input[type=radio]:checked {
   
     border-radius: 4px;
     color: #f1f1f1;
-    /* background-color: var(--color-primary-avacado);
-    border: var(--color-primary-avacado); */
-
+  
+    transition: 0.3s;
     background-color:  #31c36c;
     border:  #31c36c;
 
@@ -736,9 +739,8 @@ input[type=radio]:checked {
   
     border-radius: 4px;
     color: #f1f1f1;
-    /* background-color: var(--color-primary-avacado);
-    border: var(--color-primary-avacado); */
 
+    transition: 0.3s;
     background-color:  #31c36c;
     border:  #31c36c;
 
@@ -926,9 +928,8 @@ input[type=radio]:checked {
   
     border-radius: 4px;
     color: #f1f1f1;
-    /* background-color: var(--color-primary-avacado);
-    border: var(--color-primary-avacado); */
 
+    transition: 0.3s;
     background-color:  #31c36c;
     border:  #31c36c;
 
@@ -1116,9 +1117,8 @@ input[type=radio]:checked {
   
     border-radius: 4px;
     color: #f1f1f1;
-    /* background-color: var(--color-primary-avacado);
-    border: var(--color-primary-avacado); */
 
+    transition: 0.3s;
     background-color:  #31c36c;
     border:  #31c36c;
 
@@ -1306,9 +1306,8 @@ input[type=radio]:checked {
   
     border-radius: 4px;
     color: #f1f1f1;
-    /* background-color: var(--color-primary-avacado);
-    border: var(--color-primary-avacado); */
 
+    transition: 0.3s;
     background-color:  #31c36c;
     border:  #31c36c;
   
@@ -1495,9 +1494,8 @@ input[type=radio]:checked {
   
     border-radius: 4px;
     color: #f1f1f1;
-    /* background-color: var(--color-primary-avacado);
-    border: var(--color-primary-avacado); */
 
+    transition: 0.3s;
     background-color:  #31c36c;
     border:  #31c36c;
   

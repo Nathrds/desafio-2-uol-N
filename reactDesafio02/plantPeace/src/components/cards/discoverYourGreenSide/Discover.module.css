@@ -25,6 +25,7 @@
 }
 
 .img1:hover{
+    transition: 1s;
     filter: grayscale(0%);
 }
 
@@ -39,6 +40,7 @@
 }
 
 .image2:hover {
+    transition: 1s;
     filter: grayscale(0%);
 }
 
