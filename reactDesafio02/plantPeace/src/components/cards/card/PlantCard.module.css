@@ -1,5 +1,4 @@
 .container {
-    max-height: 800px;
     width: 100%;
     background-color: var(--background-color);
     flex-direction: column;
@@ -72,3 +71,20 @@
     font-weight: 400;
 }
 
+@media screen and (max-width <= 520px) {
+    .container {
+        height: 400px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+    
+    .price {
+        font-size: 12px;
+    }
+    
+    .discount {
+        font-size: 12px;
+    }
+}

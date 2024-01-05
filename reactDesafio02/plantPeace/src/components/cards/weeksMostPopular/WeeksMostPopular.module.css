@@ -52,6 +52,20 @@
     }
 }
 
+
+@media screen and (max-width: 530px) {
+    .cards {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cards {
+        max-width: 80%;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .sectionWeeks h1 {
         font-size: 30px;
