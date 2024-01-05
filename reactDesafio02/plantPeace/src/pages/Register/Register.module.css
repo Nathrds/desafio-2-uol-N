@@ -50,6 +50,11 @@ form {
   height: 100%;
 }
 
+.imageStyle:hover {
+  filter: grayscale(0%);
+  height: 100%;
+}
+
 .imageContainer {
   display: flex;
   justify-content: flex-end;  
