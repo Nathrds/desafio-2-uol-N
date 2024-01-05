@@ -5,35 +5,37 @@ import plantImage from "../../assets/img/imgDiscovery/right plant p.png";
 const Register = () => {
   
   const [plantData, setPlantData] = useState({
-    plantName: '',
-    plantSubtitle: '',
-    plantType: '',
-    plantPrice: '',
-    plantDiscount: '',
-    plantLocation: 'indoor',
+    name: '',
+    subtitle: '',
+    typle: '',
+    price: '',
+    discountPercentage: '',
+    label: 'indoor',
     features: '',
-    description: ''
+    description: '',
+    imgUrl: "assets/modernPicture1.png",
+    link: "https://www.gardenia.net/plants/plant-types"
   });
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
   
-    if (name === "plantName" && /[^A-Za-z.,; ]/.test(value)) {
+    if (name === "name" && /[^A-Za-z.,; ]/.test(value)) {
     alert("This field cannot contain numbers or special characters!");
     return;
   }
 
-  if (name === "plantSubtitle" && /[^A-Za-z.,; ]/.test(value)) {
+  if (name === "subtitle" && /[^A-Za-z.,; ]/.test(value)) {
     alert("This field cannot contain numbers or special characters!");
     return;
   }
 
-  if (name === "plantType" && /[^A-Za-z.,; ]/.test(value)) {
+  if (name === "typle" && /[^A-Za-z.,; ]/.test(value)) {
     alert("This field cannot contain numbers or special characters!");
     return;
   }
   
-  if (name === "plantPrice") {
+  if (name === "price") {
     const priceRegex = /^[0-9]+(\.[0-9]*)?$/;
     if (value !== "" && !priceRegex.test(value)) {
       alert("You need to put in the current format. EX: 139.99");
@@ -41,7 +43,7 @@ const Register = () => {
     }
   }
   
-   if (name === "plantDiscount") {
+   if (name === "discountPercentage") {
     const discountRegex = /^[0-9]+%?$/;
     if (value !== "" && !discountRegex.test(value)) {
       alert("You need to put in percentage format. EX: 10%");
@@ -70,14 +72,16 @@ const Register = () => {
       alert("Plant was registered successfully!");
 
       setPlantData({
-        plantName: '',
-        plantSubtitle: '',
-        plantType: '',
-        plantPrice: '',
-        plantDiscount: '',
-        plantLocation: 'indoor',
+        name: '',
+        subtitle: '',
+        typle: '',
+        price: '',
+        discountPercentage: '',
+        label: 'indoor',
         features: '',
         description: '',
+        imgUrl: "assets/modernPicture1.png",
+        link: "https://www.gardenia.net/plants/plant-types"
       });
     } else {
       alert("Failed to register plant!");
@@ -99,7 +103,7 @@ const Register = () => {
               <span className={styles.spanStyle}>Plant name:</span>
               <input
                 className={styles.inputStyle}
-                type="text"
+                type="name"
                 name="plantName"
                 placeholder="Echinocereus Cactus"
                 required
@@ -110,7 +114,7 @@ const Register = () => {
               <span className={styles.spanStyle}>Plant subtitle:</span>
               <input
                 className={styles.inputStyle}
-                type="text"
+                type="subtitle"
                 name="plantSubtitle"
                 placeholder="A majestic addition to your plant collection"
                 required
@@ -121,7 +125,7 @@ const Register = () => {
               <span className={styles.spanStyle}>Plant type:</span>
               <input
                 className={styles.inputStyle}
-                type="text"
+                type="type"
                 name="plantType"
                 placeholder="Cactus"
                 required
@@ -134,7 +138,7 @@ const Register = () => {
                   <span className={styles.spanStyle}>Price:</span>
                   <input
                     className={styles.priceStyle}
-                    type="text"
+                    type="price"
                     name="plantPrice"
                     placeholder="$139.99"
                     required
