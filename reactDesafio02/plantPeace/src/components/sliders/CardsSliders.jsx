@@ -37,11 +37,13 @@ const CardsSlider = ({ discount }) => {
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
-
-      if (screenWidth <= 450) {
+      
+      if (screenWidth <= 330) {
         setSlidesPerView(1)
-      } else if (screenWidth <= 590) {
+      }  else if (screenWidth <= 520) {
         setSlidesPerView(1.4)
+      } else if (screenWidth <= 590) {
+        setSlidesPerView(1.6)
       } else if (screenWidth <= 805) {
         setSlidesPerView(1.8)
       } else if (screenWidth <= 840) {
