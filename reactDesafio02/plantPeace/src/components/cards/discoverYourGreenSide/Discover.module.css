@@ -199,32 +199,3 @@
         padding-left: 30%;      
     }
 }
-
-@media screen and (max-width: 480px) {
-    .h2 {
-        margin: 2% 15% 4% 5%;
-        font-size: 370%;
-        max-width: 60%;
-        max-height: 100%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .p {
-        max-width: 40%;
-        padding-bottom: 10%;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .h2 {
-        font-size: 48px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .h2 {
-        max-width: 50%;
-        font-size: 38px;
-    }
-}
