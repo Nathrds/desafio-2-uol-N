@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import PlantCard from '../cards/card/PlantCard';
 import styles from './CardsSliders.module.css';
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 
 const CardsSlider = ({ discount }) => {
   const [loadedPlants, setLoadedPlants] = useState([]);
@@ -35,9 +37,10 @@ const CardsSlider = ({ discount }) => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
-    
-      if (screenWidth <= 590) {
-        setSlidesPerView(1.5)
+      if (screenWidth <= 450) {
+        setSlidesPerView(1)
+      } else if (screenWidth <= 590) {
+        setSlidesPerView(1.4)
       } else if (screenWidth <= 805) {
         setSlidesPerView(1.8)
       } else if (screenWidth <= 840) {
@@ -68,14 +71,17 @@ const CardsSlider = ({ discount }) => {
 
   return (
     <>
+    
       {loadedPlants.length > 0 && (
+        
         <Swiper
           slidesPerView={slidesPerView}
           className={styles.slide}
           spaceBetween={50}
-          pagination={{ clickable: true }}
+          pagination={{ 
+          clickable: true
+        }}
           grabCursor={true}
-          scrollbar={true}
         >
           {!discount
             ? loadedPlants.map((item) => (

@@ -52,6 +52,13 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .cards {
+        max-width: 80%;
+        margin-left: 0;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .sectionPlants h1 {
         font-size: 30px;
