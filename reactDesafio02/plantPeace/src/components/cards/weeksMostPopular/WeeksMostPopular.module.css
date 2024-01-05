@@ -39,3 +39,21 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media screen and (max-width: 905px) {
+    .sectionWeeks h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sectionWeeks h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sectionWeeks h1 {
+        font-size: 30px;
+    }
+}

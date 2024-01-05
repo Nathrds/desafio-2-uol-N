@@ -39,3 +39,21 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media screen and (max-width: 905px) {
+    .sectionPlants h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sectionPlants h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sectionPlants h1 {
+        font-size: 30px;
+    }
+}
