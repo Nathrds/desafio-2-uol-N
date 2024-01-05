@@ -36,7 +36,9 @@ const CardsSlider = ({ discount }) => {
       const screenWidth = window.innerWidth;
 
     
-      if (screenWidth <= 805) {
+      if (screenWidth <= 590) {
+        setSlidesPerView(1.5)
+      } else if (screenWidth <= 805) {
         setSlidesPerView(1.8)
       } else if (screenWidth <= 840) {
         setSlidesPerView(2.4)
