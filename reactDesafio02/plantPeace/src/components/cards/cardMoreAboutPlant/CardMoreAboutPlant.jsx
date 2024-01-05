@@ -31,6 +31,8 @@ const CardMoreAboutPlant = () => {
     return <div>Loading...</div>; 
   }
 
+  console.log(plantData['label'][0]);
+
   return (
     <div className={styles.container2}>
       <div className={styles.image}>
@@ -38,7 +40,7 @@ const CardMoreAboutPlant = () => {
       </div>
       <div className={styles.containerContent2}>
         <h1 className={styles.title}>{plantData.name}</h1>
-        <h2>{plantData.subtitle}</h2>
+        <h2 className={styles.sub}>{plantData.subtitle}</h2>
         <section className={styles.label}>
           {plantData.label.map((label, index) => (
             <CardButton key={index} label={label} />
@@ -54,15 +56,15 @@ const CardMoreAboutPlant = () => {
           <div className={styles.featuresTitle}>
             <h1 className={styles.Title}>Features</h1>
             <ul className={styles.topics}>
-              {plantData.features.split('\n').map((feature, index) => (
-                <li key={index}>{feature}</li>
+              {plantData.features.split('. ').map((feature, index) => (
+                <li key={index}><span>&bull;&#32;&#8201;</span>{feature}.</li>
               ))}
             </ul>
           </div>
         </section>
         <section className={styles.description}>
           <div className={styles.descriptionTitle}>
-            <h1>Description</h1>
+            <h1 className={styles.Title}>Description</h1>
             <p className={styles.descriptionContent}>{plantData.description}</p>
           </div>
         </section>
