@@ -171,10 +171,7 @@ input[type=radio]:checked {
 
   border-radius: 4px;
   color: #f1f1f1;
-  /* background-color: var(--color-primary-avacado);
-  border: var(--color-primary-avacado); */
-  
-  /*COPIE OS DOIS DE BAIXO E COLOQUE EM TODOS OS HOVERS DO MEDIA QUERY*/
+
   background-color:  #31c36c;
   border:  #31c36c;
 
@@ -358,8 +355,6 @@ input[type=radio]:checked {
   
     border-radius: 4px;
     color: #f1f1f1;
-    /* background-color: var(--color-primary-avacado);
-    border: var(--color-primary-avacado); */
   
     background-color:  #31c36c;
     border:  #31c36c;
