@@ -14,7 +14,7 @@
       "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
       "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
       "imgUrl": "assets/modernPicture1.png",
-      "link": "https://pt.wikipedia.org/wiki/Echinocereus"
+      "link": "https://www.gardenia.net/plants/plant-types"
     },
     {
       "id": 2,
@@ -30,7 +30,7 @@
       "features": "Species: Echinopsis huascha var. grandiflora (Red Torch Cactus) is a basally branching columnar cactus with globose to short-cylindrical stems, 4 in. in diameter (10 cm), bearing 12-18 ribs lined with sharp, needle-like spines, 1-2 in. long (2-5 cm). Blooming Season: Great for desert gardens, rock gardens, succulent gardens, or Mediterranean gardens. Propagate by seed or stem cuttings. The seeds are quite easy to germinate and grow. The flower color is not always true from seeds. Shipping: Native to Argentina are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
       "description": "In spring, glorious crimson, funnel-shaped flowers, 4 in. long (10 cm), are produced near the end of the stems. Easy to grow, Red Torch Cactus is reported to be cold-hardy down to 19°F (7°C) for short periods. It adds long-lasting beauty to the landscape. A must for in-ground cactus gardens.",
       "imgUrl": "assets/modernPicture2.png",
-      "link": "https://worldofsucculents.com/echinopsis-huascha-red-torch-cactus-deserts-blooming-jewel/"
+      "link": "https://www.gardenia.net/plants/plant-types"
     },
     {
       "id": 3,
@@ -46,7 +46,7 @@
       "features": "Species: Epipremnum are evergreen perennials, climbing with the aid of aerial roots, with simple or pinnately divided leaves and rather insignificant flowers enclosed in green spathes, but rarely seen in cultivated plants. Blooming Season: Propagate by leaf-bud, stem tip cuttings or by layering in spring or summer. Shipping: Epipremnum aureum are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
       "description": "An evergreen self-clinging climber, with slender stems that can reach to 4m long or more if not pruned. On young plants, leaves are oval, heart-shaped at the base, and glossy bright green and spotted.",
       "imgUrl": "assets/modernPicture3.png",
-      "link": "https://pt.wikipedia.org/wiki/Epipremnum"
+      "link": "https://www.gardenia.net/plants/plant-types"
     },
     {
       "id": 4,
@@ -62,39 +62,7 @@
       "features": "Species: Kalanchoe blossfeldiana - also known as flaming Katy - is a plant known for its brilliant flower colours. Blooming Season: Kalanchoe tomentosa is known as the panda plant and is grown for its attractive soft, velvety grey leaves. Shipping: Kalanchoe blossfeldiana are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
       "description": "These come in shades of red, pink, yellow, orange and cream and can last for many months. It makes a lovely contrast to other succulent plants.",
       "imgUrl": "assets/modernPicture4.png",
-      "link": "https://www.floresefolhagens.com.br/kalanchoe-kalanchoe-blossfeldiana/"
-    }, 
-    {
-      "id": 5,
-      "name": "Golden Barrel Cactus",
-      "subtitle": "Echinocactus grusonii",
-      "label": [
-        "indoor",
-        "cactus"
-      ],
-      "price": 39.99,
-      "isInSale": false,
-      "discountPercentage": 0,
-      "features": "Species: Echinocactus grusonii. Mature Size: Typically reaches 1 to 3 feet (30-90 cm) in height. Blooming Season: Rarely blooms indoors. Pot Size: Prefers well-draining soil and a smaller pot for optimal growth. Shipping: Our Golden Barrel Cacti are carefully packaged and shipped with care to ensure they arrive in excellent condition.",
-      "description": "The Golden Barrel Cactus, scientifically known as Echinocactus grusonii, is a striking cactus native to Mexico. Known for its spherical shape and distinctive golden spines, it adds a touch of desert charm to any indoor space. This low-maintenance cactus thrives in bright sunlight and requires minimal watering. With its unique appearance, the Golden Barrel Cactus is a popular choice among cactus enthusiasts.",
-      "imgUrl": "assets/modernPicture1.png",
-      "link": "https://www.gardenia.net/plant/echinocactus-grusonii-golden-barrel-cactus"
-    }, 
-    {
-      "id": 6,
-      "name": "Zebra Haworthiopsis",
-      "subtitle": "A Hardy and Attractive Succulent",
-      "label": [
-        "indoor",
-        "succulent"
-      ],
-      "price": 24.99,
-      "isInSale": true,
-      "discountPercentage": 10,
-      "features": "Species: Haworthiopsis attenuata. Mature Size: Typically grows up to 6 inches (15 cm) in height. Blooming Season: Rarely blooms indoors. Pot Size: Suitable for smaller pots, prefers well-draining soil. Shipping: Our Zebra Haworthiopsis plants are carefully packaged and shipped with care to ensure they arrive in excellent condition.",
-      "description": "Zebra Haworthiopsis, also known as Zebra Plant or Zebra Cactus, is a popular succulent with distinctive zebra-like stripes on its leaves. It thrives in bright indirect light and requires minimal watering. The plant's compact size makes it an excellent choice for windowsills or small spaces.",
-      "imgUrl": "assets/modernPicture3.png",
-      "link": "https://worldofsucculents.com/haworthiopsis-attenuata-zebra-plant/"
+      "link": "https://www.gardenia.net/plants/plant-types"
     }
   ],
   "aboutUs": [
@@ -105,7 +73,7 @@
       "age": "21",
       "aboutMe": "I know that I know nothing.",
       "imgMe": "assets/imgAboutMe/imgBoredom.PNG",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "description": "Hello, I'm Matheus Henrique Alves Gomes, a 21-year-old Computer Science student at the Federal University of Agreste de Pernambuco - UFAPE. I'm a devoted Christian and a passionate drummer, absolutely in love with all things drums.s."
     },
     {
       "id": 2,
