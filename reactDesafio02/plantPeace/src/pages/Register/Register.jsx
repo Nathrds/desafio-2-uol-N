@@ -17,32 +17,44 @@ const Register = () => {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-
-    const specialChar = /^[A-Za-z0-9 ]*$/;
-
-    if (!specialChar.test(value)) {
-      alert("Special characters are not allowed!");
-      return; 
+  
+    if (name === "plantName" && /[^A-Za-z.,; ]/.test(value)) {
+    alert("This field cannot contain numbers or special characters!");
+    return;
   }
 
-    if (["plantName", "plantSubtitle", "plantType"].includes(name) && /\d/.test(value)) {
-      alert(`This field cannot contain numbers!`);
-      return; 
-    }
+  if (name === "plantSubtitle" && /[^A-Za-z.,; ]/.test(value)) {
+    alert("This field cannot contain numbers or special characters!");
+    return;
+  }
 
-    if (["plantPrice", "plantDiscount"].includes(name)) {
-      if (value && isNaN(value)) {
-          alert(`This field cannot contain letters!`);
-          return; 
-      }
+  if (name === "plantType" && /[^A-Za-z.,; ]/.test(value)) {
+    alert("This field cannot contain numbers or special characters!");
+    return;
+  }
+  
+  if (name === "plantPrice") {
+    const priceRegex = /^[0-9]+(\.[0-9]*)?$/;
+    if (value !== "" && !priceRegex.test(value)) {
+      alert("You need to put in the current format. EX: 139.99");
+      return;
     }
-
-    setPlantData(prevData => ({
+  }
+  
+   if (name === "plantDiscount") {
+    const discountRegex = /^[0-9]+%?$/;
+    if (value !== "" && !discountRegex.test(value)) {
+      alert("You need to put in percentage format. EX: 10%");
+      return;
+    }
+  }
+  
+    setPlantData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
-
+  
   const handleSubmit = async (event) => {
     event.preventDefault();[]
 
@@ -55,10 +67,22 @@ const Register = () => {
     });
 
     if (response.ok) {
-      console.log('Plant was registered successfully!');
+      alert("Plant was registered successfully!");
+
+      setPlantData({
+        plantName: '',
+        plantSubtitle: '',
+        plantType: '',
+        plantPrice: '',
+        plantDiscount: '',
+        plantLocation: 'indoor',
+        features: '',
+        description: '',
+      });
     } else {
-      console.error('Failed to register plant');
-    }
+      alert("Failed to register plant!");
+      return
+    } 
   };
 
 
