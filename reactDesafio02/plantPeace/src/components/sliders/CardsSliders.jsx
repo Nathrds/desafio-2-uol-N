@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom'
 import PlantCard from '../cards/card/PlantCard';
 import styles from './CardsSliders.module.css';
 
@@ -85,17 +86,22 @@ const CardsSlider = ({ discount }) => {
         >
           {!discount
             ? loadedPlants.map((item) => (
-                <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.id}>
+                <Link to={`/moreabout/${item.id}`} key={item.id} style={{textDecoration: 'none'}}>
                   <PlantCard model={item} discount={discount} />
-                </SwiperSlide>
+                </Link>   
+              </SwiperSlide>         
               ))
             : productsWithDiscount.map((item) => (
-                <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.id}>
+                <Link to={`/moreabout/${item.id}`} key={item.id} style={{textDecoration: 'none'}}>
                   <PlantCard model={item} discount={discount} />
-                </SwiperSlide>
+                </Link>   
+              </SwiperSlide>
               ))}
         </Swiper>
       )}
+
       {!loadedPlants.length && <p>VAZIO</p>}
     </>
   );
