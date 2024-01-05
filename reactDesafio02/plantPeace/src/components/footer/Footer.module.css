@@ -17,7 +17,6 @@
 .articleFooter { color: #fff; }
 
 .articleFooter_H1 {
-    /* border: 2px solid red; */
     font-family: var(--titulo-h1);
     font-size: 64px;
     font-weight: 700;
@@ -39,7 +38,6 @@
 .navFooter { display: flex; }
 
 .sectionFooter {
-    /* border: 2px solid lightcoral; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -49,7 +47,6 @@
 }
 
 .sectionFooter_H2 {
-    /* border: 2px solid lightskyblue; */
     font-family: var(--titulo-h2);
     font-size: 24px;
     font-weight: 700;
@@ -58,20 +55,17 @@
 }
 
 .navLink {
-    /* border: 2px solid darkgray; */
     text-decoration: none;
     color: #fff;
     margin-bottom: 16px;
 }
 
 .navLink:hover {
-    /* background: aqua; */
     cursor: pointer;
     font-weight: 200;
 }
 
 .footerWithImg {
-    /* background: brown; */
     border-top: 1px solid #DDDEA0;
     max-width: 90%;
     color: #fff;
@@ -84,7 +78,6 @@
 }
 
 .footerWithImg_P {
-    /* background: rebeccapurple; */
     max-width: 221px;
     text-align: center;
 }

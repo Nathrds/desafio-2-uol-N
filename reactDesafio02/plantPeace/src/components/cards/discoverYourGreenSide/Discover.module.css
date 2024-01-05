@@ -2,16 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .container{
+    border: 6px solid green;
     position: relative;
     display: flex;
     height: 1024px;
     max-width: 100%;
     background-color: var(--tab-grey-color);
-    filter: grayscale(100%);
     overflow: hidden;
 }
 
 .img1{
+    border: 3px solid blue;
     position: relative;
     display: flex;
     height: 1024px;
@@ -26,6 +27,7 @@
 }
 
 .image2 {
+    border: 3px solid lightcoral;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -35,6 +37,7 @@
 }
 
 .containerContent{
+    border: 5px solid red;
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -46,6 +49,7 @@
 }
 
 .h1{
+    background: aqua;
     font-family: 'Pacifico', cursive;
     font-size: 16px;
     font-weight: 400;
@@ -60,6 +64,7 @@
 }
 
 .Line{
+    border: 3px solid lightgreen;
     width: 32px;
     height: 3px;
     float: left;
@@ -71,6 +76,7 @@
 }
 
 .h2{
+    background: lightcoral;
     font-size: 64px;
     font-family: var(--titulo-h1);
     color: #354733;
@@ -81,10 +87,12 @@
 }
 
 .green{
+    background: darkcyan;
     color: #8a9b6e;
 }
 
 .p{
+    background: darkorange;
     width: 611px;
     height: 97px;
     margin-top: 30px;
@@ -92,6 +100,7 @@
 }
 
 .learn{
+    border: 3px solid darkred;
     display: flex;
     line-height: 24.72px;
     padding-top: 20rem;
@@ -103,13 +112,64 @@
 }
 
 .learn a {
+    background: darkred;
     text-decoration: none;
     color: #808276;
 }
 
 .button{
+    background: lightgreen;
     display: flex;
     padding-top: 24px;
     z-index: 1;
     padding-left: 80px;
+}
+
+@media screen and (max-width: 820px) {
+    .img1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container{
+        max-height: 20%;
+        max-width: 100%;
+    }
+
+    .containerContent {
+        max-height: 100%;
+        padding-left: 0;
+    }
+
+    .h1{
+        font-size: 100%;
+        margin: 12% 15% 2% 15%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .h2 {
+        margin: 2% 15% 4% 5%;
+        font-size: 370%;
+        max-width: 80%;
+        max-height: 100%;
+    }
+
+    .p{
+        line-height: 24px;
+        margin: 1% 15% 4% 5%;
+        max-width: 80%;
+        max-height: 100%;
+    }
+
+    .button{
+        padding-top: 0%;
+        padding-left: 5%;
+    }
+
+    .learn{
+        padding-top: 50%;
+        margin-left: 5%;
+    }
 }
