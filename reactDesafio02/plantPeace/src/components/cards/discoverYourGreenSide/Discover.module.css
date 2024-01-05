@@ -100,6 +100,7 @@
     height: 97px;
     margin-top: 30px;
     margin-left: 80px;
+    line-height: 24.72px;
 }
 
 .learn{
@@ -156,7 +157,7 @@
         max-height: 100%;
     }
 
-    .p{
+    .p {
         line-height: 24px;
         margin: 1% 15% 4% 5%;
         max-width: 80%;
@@ -194,10 +195,54 @@
         width: 100%;
         max-width: 60%;
         max-height: 100%;
-        padding-bottom: 5%;
+        padding-bottom: 7%;
     }
 
     .learn{
         padding-left: 30%;      
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .h2 {
+        margin: 2% 15% 1% 5%;
+        font-size: 300%;
+        max-width: 50%;
+    }
+
+    .p{
+        margin: 1% 15% 6% 5%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .h2 {
+        margin: 2% 15% 0% 5%;
+        font-size: 280%;
+        max-width: 50%;
+    }
+
+    .p{
+        font-size: 80%;
+        margin: 0% 15% 6% 5%;
+        max-width: 36%;
+        padding-bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .h2 {
+        margin: 2% 15% 2% 5%;
+        font-size: 230%;
+        max-width: 40%;
+        height: 100%;
+    }
+
+    .p{
+        font-size: 80%;
+        margin: 0% 15% 6% 5%;
+        max-width: 30%;
+        padding-bottom: 12%;
     }
 }
